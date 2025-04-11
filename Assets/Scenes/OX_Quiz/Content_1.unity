@@ -1,0 +1,4937 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 10
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 1
+    m_PVRFilteringGaussRadiusAO: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &20157149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 20157150}
+  m_Layer: 5
+  m_Name: Gamma_Graph
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &20157150
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20157149}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1307431153}
+  - {fileID: 1905723891}
+  m_Father: {fileID: 1294229146}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4000, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &39890069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 39890071}
+  - component: {fileID: 39890070}
+  - component: {fileID: 39890072}
+  m_Layer: 5
+  m_Name: Beta
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &39890070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39890069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ea6d6ddac4d934f82bc84065209c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StreamName: signal04
+  StreamType: 
+  EEGpow: 0
+--- !u!224 &39890071
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39890069}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2960, y: 540}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &39890072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39890069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a27e941dd6ad147bcf340a0c3daecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storedData: []
+  OX: {fileID: 678622328}
+  interval: 0.75
+--- !u!1 &69343164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 69343165}
+  m_Layer: 5
+  m_Name: PointContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &69343165
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69343164}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 734260235}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 5000, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &135827785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 135827786}
+  - component: {fileID: 135827790}
+  - component: {fileID: 135827789}
+  - component: {fileID: 135827788}
+  - component: {fileID: 135827787}
+  m_Layer: 5
+  m_Name: EEGManager_T
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &135827786
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135827785}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 722393209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 5000, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &135827787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135827785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8eb469fbd3c1d44ba027eaefc63f809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatValues: []
+  EEGData: {fileID: 1785693597}
+  maxPoints: 400
+  xSpacing: 10
+  graphHeight: 500
+  yMaxValue: 1000
+  pointPrefab: {fileID: 6431750992491110942, guid: e94a0e572aff95d479bec44cd5243e23, type: 3}
+  textPrefab: {fileID: 2520981043811666934, guid: fa3b60b04a39c0f4b837f91c75020268, type: 3}
+  pointContainer: {fileID: 1619761570}
+  interval: 0.5
+  startOffset: {x: -2450, y: -500}
+--- !u!120 &135827788
+LineRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135827785}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 82f4c3cb890907e439cbb5eac1258326, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 0, g: 1, b: 0, a: 1}
+      key1: {r: 0, g: 1, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 1
+      m_ColorSpace: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 5
+    numCapVertices: 5
+    alignment: 0
+    textureMode: 0
+    textureScale: {x: 1, y: 1}
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MaskInteraction: 0
+  m_UseWorldSpace: 0
+  m_Loop: 0
+  m_ApplyActiveColorSpace: 1
+--- !u!114 &135827789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135827785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &135827790
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135827785}
+  m_CullTransparentMesh: 1
+--- !u!1 &162017750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 162017751}
+  m_Layer: 5
+  m_Name: OX_Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &162017751
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162017750}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 584308568}
+  - {fileID: 1623787204}
+  m_Father: {fileID: 1294229146}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &186229935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 186229937}
+  - component: {fileID: 186229938}
+  m_Layer: 0
+  m_Name: Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &186229937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186229935}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 781.9243, y: 831.8264, z: -5.099388}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &186229938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186229935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb9da046b99f74e4f83c3e65ed64be66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questions:
+  - topic: "\uACFC\uD559"
+    questionText: "\uBB3C\uC740 0\uB3C4\uC5D0\uC11C \uC5BC\uC74C\uC73C\uB85C \uBCC0\uD55C\uB2E4."
+    isCorrect: 1
+    level: 2
+  - topic: "\uACFC\uD559"
+    questionText: "\uD0DC\uC591\uC740 \uD589\uC131\uC774\uB2E4."
+    isCorrect: 0
+    level: 2
+  - topic: "\uACFC\uD559"
+    questionText: "\uBAA8\uB4E0 \uAE08\uC18D\uC740 \uC790\uC131\uC744 \uB764\uB2E4."
+    isCorrect: 0
+    level: 2
+  - topic: "\uACFC\uD559"
+    questionText: "\uBE5B\uC740 \uC18C\uB9AC\uBCF4\uB2E4 \uBE60\uB974\uAC8C \uC774\uB3D9\uD55C\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uACFC\uD559"
+    questionText: "\uC0B0\uC18C\uB294 \uC0AC\uB78C\uC758 \uC0DD\uBA85 \uC720\uC9C0\uC5D0
+      \uD544\uC218\uC801\uC778 \uAE30\uCCB4\uC774\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uACFC\uD559"
+    questionText: "\uBB3C\uC740 \uC218\uC18C \uC6D0\uC790 \uB450 \uAC1C\uC640 \uC0B0\uC18C
+      \uC6D0\uC790 \uD55C \uAC1C\uB85C \uC774\uB8E8\uC5B4\uC838 \uC788\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uACFC\uD559"
+    questionText: "\uC9C0\uAD6C\uC758 \uB300\uAE30\uB294 \uC8FC\uB85C \uD5EC\uB968\uACFC
+      \uC218\uC18C\uB85C \uC774\uB8E8\uC5B4\uC838 \uC788\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uACFC\uD559"
+    questionText: "\uC804\uC790\uAE30 \uC2A4\uD399\uD2B8\uB7FC\uC5D0\uC11C \uAC00\uC2DC\uAD11\uC120\uC740
+      \uC790\uC678\uC120\uBCF4\uB2E4 \uB192\uC740 \uC5D0\uB108\uC9C0\uB97C \uAC00\uC9C4\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uACFC\uD559"
+    questionText: "\uB274\uD134\uC758 \uC81C1\uBC95\uCE59\uC740 '\uAD00\uC131\uC758
+      \uBC95\uCE59'\uC774\uB77C\uACE0 \uBD88\uB9B0\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uACFC\uD559"
+    questionText: "\uC9C0\uAD6C\uC758 \uC790\uAE30\uC7A5\uC740 \uD0DC\uC591\uD48D\uC73C\uB85C\uBD80\uD130
+      \uC9C0\uAD6C\uB97C \uBCF4\uD638\uD558\uB294 \uC5ED\uD560\uC744 \uD55C\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uACFC\uD559"
+    questionText: "\uC0B0\uC131 \uC6A9\uC561\uC740 pH \uAC12\uC774 7\uBCF4\uB2E4
+      \uD06C\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uACFC\uD559"
+    questionText: "\uC6D0\uC790\uC758 \uC911\uC2EC\uC5D0\uB294 \uC591\uC131\uC790\uC640
+      \uC911\uC131\uC790\uB85C \uC774\uB8E8\uC5B4\uC9C4 \uC6D0\uC790\uD575\uC774
+      \uC788\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uACFC\uD559"
+    questionText: "\uC5D4\uD2B8\uB85C\uD53C\uB294 \uBB3C\uC9C8\uC758 \uC628\uB3C4\uAC00
+      \uB192\uC544\uC9C8\uC218\uB85D \uAC10\uC18C\uD55C\uB2E4."
+    isCorrect: 0
+    level: 7
+  - topic: "\uACFC\uD559"
+    questionText: "\uBC18\uBB3C\uC9C8\uC740 \uBB3C\uC9C8\uACFC \uCDA9\uB3CC\uD560
+      \uB54C \uC5D0\uB108\uC9C0\uB97C \uBC29\uCD9C\uD55C\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uACFC\uD559"
+    questionText: "DNA\uB294 \uC720\uC804 \uC815\uBCF4\uB97C \uC800\uC7A5\uD558\uB294
+      \uBD84\uC790\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uACFC\uD559"
+    questionText: "\uC911\uC131\uBBF8\uC790(neutrino)\uB294 \uC9C8\uB7C9\uC774 \uC5C6\uB294
+      \uC785\uC790\uB85C \uAC04\uC8FC\uB41C\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uACFC\uD559"
+    questionText: "\uD0DC\uC591\uC5D0\uC11C \uC77C\uC5B4\uB098\uB294 \uD575\uC735\uD569
+      \uBC18\uC751\uC758 \uC8FC\uC694 \uC5F0\uB8CC\uB294 \uC218\uC18C\uC774\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uACFC\uD559"
+    questionText: "\uC0C1\uB300\uC131 \uC774\uB860\uC5D0 \uB530\uB974\uBA74, \uBE5B\uC758
+      \uC18D\uB3C4\uB294 \uC808\uB300\uC801\uC73C\uB85C \uC77C\uC815\uD558\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uACFC\uD559"
+    questionText: "\uD0DC\uC591\uC740 \uBCC4\uC774\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uACFC\uD559"
+    questionText: "\uC9C0\uAD6C\uB294 \uD3C9\uD3C9\uD558\uB2E4."
+    isCorrect: 0
+    level: 2
+  - topic: "\uACFC\uD559"
+    questionText: "\uC77C\uBC18 \uC0C1\uB300\uC131 \uC774\uB860\uC5D0 \uB530\uB974\uBA74,
+      \uC911\uB825\uC7A5\uC740 \uACF5\uAC04\uACFC \uC2DC\uAC04\uC744 \uD718\uAC8C
+      \uB9CC\uB4E0\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uACFC\uD559"
+    questionText: "\uBB3C\uC740 H2O\uB85C \uC774\uB8E8\uC5B4\uC838 \uC788\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uACFC\uD559"
+    questionText: "\uC0AC\uB78C\uC740 \uB3C4\uAD6C \uC5C6\uC774 \uC2A4\uC2A4\uB85C\uC758
+      \uD798\uC73C\uB85C \uB0A0 \uC218 \uC788\uB2E4."
+    isCorrect: 0
+    level: 1
+  - topic: "\uACFC\uD559"
+    questionText: "\uBE5B\uC740 \uD30C\uB3D9\uACFC \uC785\uC790\uC758 \uC131\uC9C8\uC744
+      \uB3D9\uC2DC\uC5D0 \uAC00\uC9C4\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uACFC\uD559"
+    questionText: "\uC774\uB860\uC0C1\uC73C\uB85C \uAE30\uCCB4\uB294 \uC808\uB300\uC601\uB3C4\uC5D0\uC11C
+      \uBD80\uD53C\uAC00 0\uC774 \uB41C\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uACFC\uD559"
+    questionText: "\uBB3C\uC740 100\uB3C4\uC5D0\uC11C \uB053\uB294\uB2E4."
+    isCorrect: 1
+    level: 2
+  - topic: "\uACFC\uD559"
+    questionText: "\uC18C\uB9AC\uB294 \uC9C4\uACF5\uC5D0\uC11C\uB3C4 \uC804\uB2EC\uB420
+      \uC218 \uC788\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uACFC\uD559"
+    questionText: "\uBE5B\uC740 \uD30C\uB3D9\uACFC \uC785\uC790\uC758 \uC131\uC9C8\uC744
+      \uB3D9\uC2DC\uC5D0 \uAC00\uC9C4\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uACFC\uD559"
+    questionText: "\uD50C\uB8E8\uD1A0\uB284\uC740 \uC790\uC5F0\uC801\uC73C\uB85C
+      \uC874\uC7AC\uD558\uB294 \uC6D0\uC18C\uC774\uB2E4."
+    isCorrect: 0
+    level: 7
+  - topic: "\uACFC\uD559"
+    questionText: "\uC0AC\uB78C\uC740 \uC0B0\uC18C\uAC00 \uC5C6\uC73C\uBA74 \uC0B4
+      \uC218 \uC5C6\uB2E4."
+    isCorrect: 1
+    level: 1
+  - topic: "\uACFC\uD559"
+    questionText: "\uB300\uD1B5\uC77C\uC774\uB860(GUT)\uC740 \uC790\uC5F0\uACC4\uC5D0\uC11C
+      \uC874\uC7AC\uD558\uB294 4\uAC00\uC9C0 \uD798\uC5D0\uC11C \uC911\uB825\uC744
+      \uC81C\uC678\uD55C\n\uAC15\uB825, \uC804\uC790\uAE30\uB825, \uC57D\uB825\uC744
+      \uD558\uB098\uC758 \uC774\uB860\uC73C\uB85C \uC124\uBA85\uD558\uB824 \uD55C\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uACFC\uD559"
+    questionText: "\uBAA8\uB4E0 \uC0C8\uB294 \uB0A0 \uC218 \uC788\uB2E4."
+    isCorrect: 0
+    level: 1
+  - topic: "\uACFC\uD559"
+    questionText: "\uC911\uB825\uD30C\uB294 \uC2DC\uACF5\uAC04\uC758 \uACE1\uB960
+      \uBCC0\uD654\uB85C \uC778\uD574 \uBC1C\uC0DD\uD558\uB294 \uD30C\uB3D9\uC774\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uACFC\uD559"
+    questionText: "\uCD08\uC804\uB3C4\uCCB4\uB294 \uC808\uB300\uC628\uB3C4 0K\uC5D0\uC11C\uB9CC
+      \uC800\uD56D\uC774 0\uC774 \uB41C\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uACFC\uD559"
+    questionText: "\uAD11\uC790(photon)\uB294 \uC9C8\uB7C9\uC744 \uAC00\uC9C0\uACE0
+      \uC788\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uACFC\uD559"
+    questionText: "\uC804\uC790\uC640 \uC591\uC131\uC790\uB294 \uAC19\uC740 \uC9C8\uB7C9\uC744
+      \uAC00\uC9C4\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uACFC\uD559"
+    questionText: "\uC778\uCCB4\uC5D0\uC11C \uAC00\uC7A5 \uB9CE\uC774 \uC874\uC7AC\uD558\uB294
+      \uC6D0\uC18C\uB294 \uC0B0\uC18C\uC774\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uACFC\uD559"
+    questionText: "\uCD08\uB048 \uC774\uB860\uC5D0 \uB530\uB974\uBA74, \uC6B0\uC8FC\uC758
+      \uAE30\uBCF8 \uAD6C\uC131 \uC694\uC18C\uB294 1\uCC28\uC6D0\uC801\uC778 \uB048\uC774\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uACFC\uD559"
+    questionText: "\uD638\uD0B9 \uBCF5\uC0AC\uB294 \uBE14\uB799\uD640\uC774 \uC5D0\uB108\uC9C0\uB97C
+      \uBC29\uCD9C\uD558\uBA74\uC11C \uC99D\uBC1C\uD558\uB294 \uD604\uC0C1\uC774\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uACFC\uD559"
+    questionText: "\uC804\uC790\uAE30 \uC774\uB860\uC744 \uC81C\uC548\uD55C \uACFC\uD559\uC790\uB294
+      \uB274\uD134\uC774\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uACFC\uD559"
+    questionText: "\uD0DC\uC591\uC758 \uBE5B\uC774 \uC9C0\uAD6C\uC5D0 \uB3C4\uB2EC\uD558\uB294
+      \uB370 \uC57D 8\uBD84 20\uCD08\uAC00 \uAC78\uB9B0\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uACFC\uD559"
+    questionText: "\uBAA8\uB4E0 \uAE08\uC18D\uC740 \uC0C1\uC628\uC5D0\uC11C \uACE0\uCCB4
+      \uC0C1\uD0DC\uC774\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uACFC\uD559"
+    questionText: "\uC6D0\uC790\uC758 \uD575\uC744 \uAD6C\uC131\uD558\uB294 \uC591\uC131\uC790\uC640
+      \uC911\uC131\uC790\uB294 \uC11C\uB85C \uAC15\uD55C \uD575\uB825\uC73C\uB85C
+      \uACB0\uD569\uB418\uC5B4 \uC788\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uACFC\uD559"
+    questionText: "\uC5F4\uC5ED\uD559 \uC81C2\uBC95\uCE59\uC5D0 \uB530\uB974\uBA74,
+      \uC5D4\uD2B8\uB85C\uD53C\uB294 \uD56D\uC0C1 \uAC10\uC18C\uD558\uB294 \uBC29\uD5A5\uC73C\uB85C
+      \uC9C4\uD589\uD55C\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uACFC\uD559"
+    questionText: "\uBC18\uB3C4\uCCB4\uB294 \uC628\uB3C4\uAC00 \uB0AE\uC544\uC9C8\uC218\uB85D
+      \uC804\uAE30 \uC804\uB3C4\uC131\uC774 \uC99D\uAC00\uD55C\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uACFC\uD559"
+    questionText: "DNA\uB294 \uB2E8\uBC31\uC9C8\uB85C \uAD6C\uC131\uB418\uC5B4 \uC788\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uACFC\uD559"
+    questionText: "\uC9C0\uAD6C\uC758 \uC911\uC2EC\uBD80\uB294 \uC561\uCCB4 \uC0C1\uD0DC\uC774\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uACFC\uD559"
+    questionText: "\uC591\uC790 \uC5BD\uD798\uC740 \uB450 \uC785\uC790\uAC00 \uACF5\uAC04\uC801\uC73C\uB85C
+      \uB5A8\uC5B4\uC838 \uC788\uC5B4\uB3C4 \uC11C\uB85C \uC0C1\uD0DC\uAC00 \uC5F0\uAD00\uB418\uB294
+      \uD604\uC0C1\uC774\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uACFC\uD559"
+    questionText: "\uC808\uB300\uC628\uB3C4 0K\uC5D0\uC11C\uB294 \uBAA8\uB4E0 \uBD84\uC790\uC758
+      \uC6B4\uB3D9\uC774 \uC644\uC804\uD788 \uBA48\uCD98\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uACFC\uD559"
+    questionText: "\uB2E4\uC911\uC6B0\uC8FC \uC774\uB860\uC740 \uD604\uC7AC \uC2E4\uD5D8\uC801\uC73C\uB85C
+      \uC785\uC99D\uB418\uC5C8\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uACFC\uD559"
+    questionText: "\uD0C4\uC18C\uB294 \uBE44\uAE08\uC18D \uC6D0\uC18C\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uACFC\uD559"
+    questionText: "\uB2EC\uC740 \uC9C0\uAD6C\uB97C \uB3C8\uB2E4."
+    isCorrect: 1
+    level: 1
+  - topic: "\uACFC\uD559"
+    questionText: "\uBD88\uC740 \uBB3C\uC744 \uBD80\uC73C\uBA74 \uB354 \uC798 \uD0C4\uB2E4."
+    isCorrect: 0
+    level: 1
+  - topic: "\uACFC\uD559"
+    questionText: "\uC804\uC790\uAE30\uD30C\uC758 \uBAA8\uB4E0 \uC2A4\uD399\uD2B8\uB7FC\uC5D0\uC11C
+      \uAC10\uB9C8\uC120\uC774 \uAC00\uC7A5 \uAE34 \uD30C\uC7A5\uC744 \uAC00\uC9C4\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uACFC\uD559"
+    questionText: "\uC288\uB8B0\uB529\uAC70 \uBC29\uC815\uC2DD\uC740 \uC591\uC790\uC5ED\uD559\uC5D0\uC11C
+      \uC785\uC790\uC758 \uC6B4\uB3D9\uC744 \uAE30\uC220\uD558\uB294 \uAE30\uBCF8
+      \uBC29\uC815\uC2DD\uC774\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uACFC\uD559"
+    questionText: "\uB098\uBB34\uB294 \uD587\uBE5B \uC5C6\uC774\uB3C4 \uC131\uC7A5\uD560
+      \uC218 \uC788\uB2E4."
+    isCorrect: 0
+    level: 1
+  - topic: "\uACFC\uD559"
+    questionText: "\uCD08\uB300\uCE6D \uC774\uB860(SUSY)\uC740 \uD45C\uC900 \uBAA8\uD615\uC758
+      \uBAA8\uB4E0 \uC785\uC790\uC5D0 \uB300\uD574 \uB3D9\uC77C\uD55C \uC9C8\uB7C9\uC744
+      \uAC00\uC9C4 \uC9DD \uC785\uC790\uAC00 \uC874\uC7AC\uD55C\uB2E4\uACE0 \uC608\uCE21\uD55C\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uACFC\uD559"
+    questionText: "\uC218\uC131\uC740 \uD0DC\uC591\uACC4\uC5D0\uC11C \uAC00\uC7A5
+      \uD070 \uD589\uC131\uC774\uB2E4."
+    isCorrect: 0
+    level: 2
+  - topic: "\uACFC\uD559"
+    questionText: "\uC9C4\uACF5\uC5D0\uC11C\uB294 \uC5B4\uB5A4 \uC804\uC790\uAE30\uD30C\uB3C4
+      \uC804\uD30C\uB420 \uC218 \uC5C6\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uACFC\uD559"
+    questionText: "\uC18C\uD589\uC131\uB300\uB294 \uD654\uC131\uACFC \uBAA9\uC131
+      \uC0AC\uC774\uC5D0 \uC704\uCE58\uD55C\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uACFC\uD559"
+    questionText: "\uD0DC\uC591\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uC628\uB3C4\uAC00
+      \uB192\uC740 \uD589\uC131\uC740 \uAE08\uC131\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uACFC\uD559"
+    questionText: "\uBE5B\uC740 \uBB3C\uC9C8\uC774 \uC5C6\uB294 \uACF5\uAC04\uC744
+      \uD1B5\uACFC\uD560 \uC218 \uC5C6\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uACFC\uD559"
+    questionText: "\uD1A0\uC131\uC758 \uACE0\uB9AC\uB294 \uB300\uBD80\uBD84 \uC5BC\uC74C\uACFC
+      \uBA3C\uC9C0\uB85C \uC774\uB8E8\uC5B4\uC838 \uC788\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uACFC\uD559"
+    questionText: "\uB300\uBD80\uBD84\uC758 \uBC14\uC774\uB7EC\uC2A4\uB294 \uC2A4\uC2A4\uB85C
+      \uC5D0\uB108\uC9C0\uB97C \uC0DD\uC131\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uACFC\uD559"
+    questionText: "\uBE14\uB799\uD640\uC758 \uC911\uB825\uC740 \uBE5B\uC870\uCC28
+      \uBE60\uC838\uB098\uC62C \uC218 \uC5C6\uC744 \uC815\uB3C4\uB85C \uAC15\uD558\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uACFC\uD559"
+    questionText: "\uC6D0\uC790\uC758 \uD575\uC740 \uC591\uC131\uC790\uC640 \uC911\uC131\uC790\uB85C
+      \uAD6C\uC131\uB418\uC5B4 \uC788\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uACFC\uD559"
+    questionText: "\uC591\uC790\uC7A5\uB860\uC5D0\uC11C \uAC00\uC0C1\uC758 \uC785\uC790\uB294
+      \uC2E4\uD5D8\uC801\uC73C\uB85C \uC9C1\uC811 \uAC80\uCD9C\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uACFC\uD559"
+    questionText: "\uC74C\uC2DD\uBB3C \uC18C\uD654\uB294 \uC8FC\uB85C \uC18C\uC7A5\uC5D0\uC11C
+      \uC774\uB8E8\uC5B4\uC9C4\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uACFC\uD559"
+    questionText: "\uC804\uAE30\uB294 \uC804\uC790\uC758 \uD750\uB984\uC5D0 \uC758\uD574
+      \uBC1C\uC0DD\uD55C\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uACFC\uD559"
+    questionText: "\uD0DC\uC591\uC740 \uBC24\uC5D0 \uB72C\uB2E4."
+    isCorrect: 0
+    level: 1
+  - topic: "\uACFC\uD559"
+    questionText: "\uD638\uD0B9 \uBCF5\uC0AC\uB294 \uBE14\uB799\uD640\uC774 \uBC1C\uC0B0\uD558\uB294
+      \uC5D0\uB108\uC9C0\uB85C, \uC774\uB860\uC801\uC73C\uB85C \uAD00\uCE21\uB41C
+      \uBC14 \uC788\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uACFC\uD559"
+    questionText: "\uBB3C\uACE0\uAE30\uB294 \uBB3C\uC18D\uC5D0\uC11C \uC228\uC744
+      \uC274 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 1
+  - topic: "\uACFC\uD559"
+    questionText: "\uC554\uD751\uBB3C\uC9C8\uC740 \uC8FC\uB85C \uC911\uC785\uC790\uB85C
+      \uAD6C\uC131\uB418\uC5B4 \uC788\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCF54\uB07C\uB9AC\uB294 \uD3EC\uC720\uB958\uC774\uB2E4."
+    isCorrect: 1
+    level: 1
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uD0C0\uC870\uB294 \uB0A0 \uC218 \uC788\uB294 \uC0C8\uC774\uB2E4."
+    isCorrect: 0
+    level: 2
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uBC15\uC950\uB294 \uC720\uC77C\uD558\uAC8C \uB0A0 \uC218 \uC788\uB294
+      \uD3EC\uC720\uB958\uC774\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCEA5\uAC70\uB8E8\uB294 \uB4A4\uB85C \uAC78\uC744 \uC218 \uC788\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uBD81\uADF9\uACF0\uC758 \uD53C\uBD80\uB294 \uAC80\uC740\uC0C9\uC774\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uACE0\uC591\uC774\uB294 \uCD08\uCF5C\uB9BF\uC744 \uBA39\uC5B4\uB3C4
+      \uAD1C\uCC2E\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uB3C4\uB9C8\uBC40\uC740 \uAF2C\uB9AC\uB97C \uC2A4\uC2A4\uB85C
+      \uC790\uB97C \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uBC8C\uB4E4\uC740 \uCDA4\uC73C\uB85C \uC758\uC0AC\uC18C\uD1B5\uC744
+      \uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCE74\uBA5C\uB808\uC628\uC740 \uD53C\uBD80 \uC0C9\uAE54\uC744
+      \uAC10\uC815 \uC0C1\uD0DC\uC5D0 \uB530\uB77C \uBC14\uAFC0 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uAC1C\uBBF8\uB294 \uC7A0\uC744 \uC790\uC9C0 \uC54A\uB294\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCF54\uC54C\uB77C\uB294 \uC720\uCE7C\uB9BD\uD22C\uC2A4 \uC78E
+      \uC774\uC678\uC758 \uC74C\uC2DD\uB3C4 \uC790\uC8FC \uBA39\uB294\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC77C\uBD80 \uAC1C\uAD6C\uB9AC\uB294 \uC5BC\uC5B4\uBD99\uC5B4\uB3C4
+      \uC0B4\uC544\uB0A8\uC744 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uD1A0\uB07C\uC758 \uC55E\uB2C8\uB294 \uD3C9\uC0DD \uC790\uB77C\uB09C\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCF54\uBFD4\uC18C\uC758 \uBFD4\uC740 \uBF08\uB85C \uC774\uB8E8\uC5B4\uC838
+      \uC788\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uB3CC\uACE0\uB798\uB294 \uC758\uC0AC\uC18C\uD1B5\uC744 \uC704\uD574
+      \uACE0\uC720\uD55C \uC774\uB984\uC744 \uC0AC\uC6A9\uD55C\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uD0C0\uB780\uD234\uB77C\uB294 \uB3C5\uC774 \uC5C6\uC5B4 \uC0AC\uB78C\uC5D0\uAC8C
+      \uBB34\uD574\uD558\uB2E4."
+    isCorrect: 0
+    level: 7
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCE74\uD53C\uBC14\uB77C\uB294 \uC124\uCE58\uB958 \uC911 \uAC00\uC7A5
+      \uD06C\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC9C0\uB801\uC774\uC758 \uBAB8\uC740 \uC5EC\uB7EC \uAC1C\uC758
+      \uB9C8\uB514\uB85C \uC774\uB8E8\uC5B4\uC838 \uC788\uB2E4."
+    isCorrect: 1
+    level: 2
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uBD80\uC5C9\uC774\uB294 \uB0AE\uC5D0 \uD65C\uB3D9\uD558\uB294
+      \uB3D9\uBB3C\uC774\uB2E4."
+    isCorrect: 0
+    level: 1
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC218\uB2EC\uC740 \uB3CC\uC744 \uB3C4\uAD6C\uB85C \uC0AC\uC6A9\uD558\uB294
+      \uBA87 \uC548 \uB418\uB294 \uB3D9\uBB3C \uC911 \uD558\uB098\uC774\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCF54\uB07C\uB9AC\uB294 \uD558\uB8E8\uC5D0 \uC57D 3\uC2DC\uAC04\uB9CC
+      \uC7A0\uC744 \uC794\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uBD88\uAC00\uC0AC\uB9AC\uB294 \uB1CC\uAC00 \uC5C6\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uACE0\uB798\uB294 \uBB3C\uACE0\uAE30\uAC00 \uC544\uB2C8\uB77C
+      \uD3EC\uC720\uB958\uC774\uB2E4."
+    isCorrect: 1
+    level: 2
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCF54\uC54C\uB77C\uB294 \uD558\uB8E8\uC5D0 20\uC2DC\uAC04 \uC774\uC0C1\uC744
+      \uC794\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uD558\uB9C8\uC758 \uB540\uC740 \uBD89\uC740\uC0C9\uC744 \uB764\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uAE30\uB9B0\uC758 \uD600\uB294 \uAC80\uD478\uB978 \uC0C9\uC774\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uAC00\uC624\uB9AC\uB294 \uC804\uAE30\uB97C \uBC1C\uC0DD\uC2DC\uD0AC
+      \uC218 \uC788\uB2E4."
+    isCorrect: 0
+    level: 1
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCE74\uBA5C\uB808\uC628\uC740 \uC8FC\uBCC0 \uD658\uACBD\uC5D0
+      \uB530\uB77C \uC0C9\uC774 \uBCC0\uD558\uB294 \uB2A5\uB825\uC774 \uC788\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCF54\uBE0C\uB77C\uB294 \uC790\uC2E0\uC774 \uC54C\uC744 \uB0B3\uC740
+      \uD6C4 \uC0C8\uB07C\uB97C \uB3CC\uBCF8\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uB300\uC655\uC624\uC9D5\uC5B4\uB294 \uC9C0\uAD6C\uC0C1\uC5D0\uC11C
+      \uAC00\uC7A5 \uD070 \uBB34\uCC99\uCD94\uB3D9\uBB3C \uC911 \uD558\uB098\uC774\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uAC1C\uBBF8\uB294 \uD3D0\uB97C \uAC00\uC9C0\uACE0 \uC788\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCE74\uBA5C\uB808\uC628\uC758 \uB208\uC740 \uC11C\uB85C \uB3C5\uB9BD\uC801\uC73C\uB85C
+      \uC6C0\uC9C1\uC77C \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC0C1\uC5B4\uB294 \uD3C9\uC0DD \uB3D9\uC548 \uACC4\uC18D\uD574\uC11C
+      \uC774\uB97C \uAD50\uCCB4\uD55C\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC218\uB2EC\uC740 \uBB3C\uC18D\uC5D0\uC11C \uC228\uC744 \uC26C\uAE30
+      \uC704\uD574 \uC544\uAC00\uBBF8\uB97C \uC0AC\uC6A9\uD55C\uB2E4."
+    isCorrect: 0
+    level: 1
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCE74\uD53C\uBC14\uB77C\uB294 \uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5
+      \uD070 \uC124\uCE58\uB958\uC774\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC624\uB9AC\uB294 \uC55E\uBC1C\uAC00\uB77D\uC774 \uC11C\uB85C
+      \uBD99\uC5B4\uC788\uB2E4."
+    isCorrect: 1
+    level: 2
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uB099\uD0C0\uC758 \uD639\uC5D0\uB294 \uBB3C\uC774 \uC800\uC7A5\uB418\uC5B4
+      \uC788\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uD574\uD30C\uB9AC\uB294 \uB1CC\uAC00 \uC5C6\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uACE0\uC591\uC774\uB294 \uC778\uAC04\uC758 \uB9D0\uC744 \uC774\uD574\uD560
+      \uC218 \uC5C6\uB2E4."
+    isCorrect: 0
+    level: 2
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCF54\uB07C\uB9AC\uB294 \uC808\uB300\uB85C \uC810\uD504\uD560
+      \uC218 \uC5C6\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uBD88\uAC00\uC0AC\uB9AC\uB294 \uB2E4\uB9AC\uAC00 \uC798\uB824\uB3C4
+      \uB2E4\uC2DC \uC790\uB784 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uD558\uC774\uC5D0\uB098\uB294 \uAC1C\uACFC \uB3D9\uBB3C\uC774\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC0C1\uC5B4\uB294 \uBB3C \uBC16\uC5D0\uC11C\uB3C4 10\uBD84 \uC774\uC0C1
+      \uC0DD\uC874\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC9C0\uB124\uB294 \uB2E4\uB9AC\uAC00 300\uAC1C\uAC00 \uB118\uB294
+      \uC885\uC774 \uC788\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uAC70\uBBF8\uB294 \uACE4\uCDA9\uC774\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uBB38\uC5B4\uB294 \uC704\uD611\uC744 \uBC1B\uC744 \uB54C \uB2E4\uB9AC\uB97C
+      \uC2A4\uC2A4\uB85C \uC808\uB2E8\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC778\uAC04\uC758 \uC2EC\uC7A5\uC740 \uB124 \uAC1C\uC758 \uBC29\uC73C\uB85C
+      \uC774\uB8E8\uC5B4\uC838 \uC788\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC778\uAC04\uC758 \uB1CC\uB294 \uC57D 1.4kg\uC758 \uBB34\uAC8C\uB97C
+      \uAC00\uC9C4\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC0AC\uB78C\uC758 \uC720\uC804\uC790\uB294 100% \uACE0\uC720\uD558\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC0AC\uB78C\uC758 \uC2DC\uB825\uC740 \uD0DC\uC5B4\uB0AC\uC744
+      \uB54C\uAC00 \uAC00\uC7A5 \uC644\uBCBD\uD558\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC778\uAC04\uC758 \uD3D0\uB294 \uD558\uB098\uB9CC \uC788\uC5B4\uB3C4
+      \uC815\uC0C1\uC801\uC73C\uB85C \uC0DD\uD65C\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC0C1\uC5B4\uB294 \uBF08\uAC00 \uC544\uB2CC \uC5F0\uACE8\uB85C
+      \uC774\uB8E8\uC5B4\uC838 \uC788\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uAE08\uBD95\uC5B4\uB294 \uD55C \uB2EC \uC774\uC0C1 \uC9C0\uB09C
+      \uC77C\uC744 \uAE30\uC5B5\uD560 \uC218 \uC5C6\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uBAA8\uB4E0 \uBB3C\uACE0\uAE30\uB294 \uC544\uAC00\uBBF8\uB85C\uB9CC
+      \uD638\uD761\uD55C\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC804\uAE30\uBC40\uC7A5\uC5B4\uB294 600\uBCFC\uD2B8 \uC774\uC0C1\uC758
+      \uC804\uAE30\uB97C \uC0DD\uC131\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC778\uAC04\uC758 \uCCB4\uC628\uC740 \uD3C9\uADE0\uC801\uC73C\uB85C
+      \uC57D 37\xB0C\uC774\uB2E4."
+    isCorrect: 1
+    level: 1
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC5B4\uB958 \uC911 \uC77C\uBD80\uB294 \uC721\uC9C0\uC5D0\uC11C\uB3C4
+      \uC228\uC744 \uC274 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC0AC\uB78C\uC758 \uD608\uC561\uD615\uC740 A, B, O \uC138 \uC885\uB958\uB9CC
+      \uC874\uC7AC\uD55C\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC778\uAC04\uC758 \uB1CC\uB294 \uC804\uCCB4 \uCCB4\uC911\uC758
+      \uC57D 2%\uB97C \uCC28\uC9C0\uD558\uC9C0\uB9CC, \uC5D0\uB108\uC9C0 \uC18C\uBE44\uB7C9\uC740
+      20%\uC5D0 \uB2EC\uD55C\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC0AC\uB78C\uC740 \uD558\uB8E8 \uD3C9\uADE0 2\uB9AC\uD130\uC758
+      \uCE68\uC744 \uC0DD\uC131\uD55C\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC778\uAC04\uC758 \uB208\uC740 1,000\uB9CC \uAC00\uC9C0 \uC774\uC0C1\uC758
+      \uC0C9\uC0C1\uC744 \uAD6C\uBCC4\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC0AC\uB78C\uC758 \uC190\uD1B1\uACFC \uBA38\uB9AC\uCE74\uB77D\uC740
+      \uC8FD\uC740 \uC138\uD3EC\uB85C \uC774\uB8E8\uC5B4\uC838 \uC788\uB2E4."
+    isCorrect: 1
+    level: 2
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uBB3C\uACE0\uAE30\uB294 \uD56D\uC0C1 \uCC28\uAC00\uC6B4 \uD53C\uB97C
+      \uAC00\uC9C0\uACE0 \uC788\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC0C1\uC5B4\uB294 \uC218\uBA85\uC774 \uD3C9\uADE0 5\uB144\uC774\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uBB3C\uACE0\uAE30 \uC911 \uC77C\uBD80\uB294 \uC721\uC9C0\uC5D0\uC11C\uB3C4
+      \uC228\uC744 \uC274 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC0AC\uB78C\uC740 270\uAC1C \uC774\uC0C1\uC758 \uBF08\uB97C \uAC00\uC9C0\uACE0
+      \uD0DC\uC5B4\uB098\uC9C0\uB9CC, \uC131\uC7A5\uD558\uBA74\uC11C 206\uAC1C\uB85C
+      \uC904\uC5B4\uB4E0\uB2E4."
+    isCorrect: 1
+    level: 2
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uAE08\uBD95\uC5B4\uB294 \uCCAD\uAC01\uC744 \uAC00\uC9C0\uACE0
+      \uC788\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC0AC\uB78C\uC758 \uD53C\uBD80\uB294 \uCCB4\uC628 \uC870\uC808\uC744
+      \uB3D5\uAE30 \uC704\uD574 \uB540\uC744 \uBD84\uBE44\uD55C\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uB300\uBD80\uBD84\uC758 \uBB3C\uACE0\uAE30\uB294 \uC218\uBA85\uC744
+      1\uB144 \uC774\uD558\uB85C \uC0B0\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uD574\uB9C8\uB294 \uC218\uCEF7\uC774 \uC0C8\uB07C\uB97C \uB0B3\uB294\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC778\uAC04\uC758 \uC2EC\uC7A5\uC740 \uD558\uB8E8\uC5D0 \uC57D
+      10\uB9CC \uBC88 \uB6F4\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCF54\uB07C\uB9AC\uB294 \uD558\uB8E8\uC5D0 \uC57D 70\uB9AC\uD130
+      \uC774\uC0C1 \uBB3C\uC744 \uB9C8\uC2E0\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC624\uB9AC\uB108\uAD6C\uB9AC\uB294 \uC54C\uC744 \uB0B3\uB294
+      \uD3EC\uC720\uB958\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uC545\uC5B4\uB294 \uC785\uC744 \uBC8C\uB9B4 \uB54C\uBCF4\uB2E4
+      \uB2EB\uC744 \uB54C \uB354 \uAC15\uD55C \uD798\uC744 \uC0AC\uC6A9\uD55C\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uCF54\uC54C\uB77C\uB294 \uC720\uCE7C\uB9BD\uD22C\uC2A4 \uC78E\uC5D0
+      \uD3EC\uD568\uB41C \uB3C5\uC744 \uD574\uB3C5\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uB291\uB300\uB294 \uBB34\uB9AC \uC0DD\uD65C\uC744 \uD558\uC9C0
+      \uC54A\uACE0 \uB2E8\uB3C5\uC73C\uB85C \uC0AC\uB0E5\uD55C\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uBB38\uC5B4\uB294 \uC2EC\uC7A5\uC774 2\uAC1C \uC774\uC0C1 \uC788\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uD3AD\uADC4\uC740 \uB0A8\uADF9\uC5D0\uC11C\uB9CC \uC11C\uC2DD\uD55C\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uACE0\uC591\uC774\uB294 \uB540\uC0D8\uC774 \uBC1C\uBC14\uB2E5\uC5D0\uB9CC
+      \uC788\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uBD88\uAC00\uC0AC\uB9AC\uB294 \uC2EC\uC7A5\uC774 2\uAC1C \uC788\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uACE0\uB798\uB294 \uBB3C\uC18D\uC5D0\uC11C \uC228\uC744 \uC26C\uAE30
+      \uC704\uD574 \uC544\uAC00\uBBF8\uB97C \uC0AC\uC6A9\uD55C\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uB3D9\uBB3C"
+    questionText: "\uAC1C\uBBF8\uB294 \uC790\uAE30 \uBAB8\uBB34\uAC8C\uC758 50\uBC30\uAE4C\uC9C0
+      \uB4E4 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uC138\uACC4"
+    questionText: "\uC77C\uBCF8\uC758 \uC218\uB3C4\uB294 \uB3C4\uCFC4\uC774\uB2E4."
+    isCorrect: 1
+    level: 1
+  - topic: "\uC138\uACC4"
+    questionText: "\uD504\uB791\uC2A4\uC758 \uB300\uD45C\uC801\uC778 \uC74C\uC2DD
+      \uC911 \uD558\uB098\uB294 \uC2A4\uC2DC\uC774\uB2E4."
+    isCorrect: 0
+    level: 2
+  - topic: "\uC138\uACC4"
+    questionText: "\uBE0C\uB77C\uC9C8\uC740 \uB0A8\uC544\uBA54\uB9AC\uCE74 \uB300\uB959\uC5D0
+      \uC704\uCE58\uD574 \uC788\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uC774\uC9D1\uD2B8\uC5D0\uB294 \uD53C\uB77C\uBBF8\uB4DC\uAC00
+      \uC874\uC7AC\uD558\uC9C0 \uC54A\uB294\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uB9CE\uC740 \uC778\uAD6C\uB97C
+      \uAC00\uC9C4 \uB098\uB77C\uB294 \uC778\uB3C4\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uC138\uACC4"
+    questionText: "\uC2A4\uC704\uC2A4\uB294 \uC720\uB7FD\uC5F0\uD569(EU) \uD68C\uC6D0\uAD6D\uC774\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uB300\uD55C\uBBFC\uAD6D\uC758 \uC804\uD1B5 \uC758\uC0C1\uC740
+      \uAE30\uBAA8\uB178\uC774\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uC138\uACC4"
+    questionText: "\uB85C\uB9C8 \uC81C\uAD6D\uC740 \uAE30\uC6D0\uC804 1\uC138\uAE30\uC5D0
+      \uBA78\uB9DD\uD558\uC600\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uC138\uACC4"
+    questionText: "\uB178\uB974\uC6E8\uC774\uB294 \uC11D\uC720 \uC218\uCD9C\uB85C
+      \uACBD\uC81C\uB97C \uBC1C\uC804\uC2DC\uD0A8 \uB098\uB77C \uC911 \uD558\uB098\uC774\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uBA55\uC2DC\uCF54\uC758 \uC804\uD1B5 \uC74C\uC2DD \uC911 \uD558\uB098\uB294
+      \uD0C0\uCF54\uC774\uB2E4."
+    isCorrect: 1
+    level: 2
+  - topic: "\uC138\uACC4"
+    questionText: "\uCE90\uB098\uB2E4\uC758 \uACF5\uC6A9\uC5B4\uB294 \uC601\uC5B4\uC640
+      \uD504\uB791\uC2A4\uC5B4\uC774\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uB3C5\uC77C\uC758 \uC218\uB3C4\uB294 \uBCA0\uB97C\uB9B0\uC774\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uCE60\uB808\uB294 \uB0A8\uC544\uBA54\uB9AC\uCE74\uC5D0\uC11C
+      \uAC00\uC7A5 \uB113\uC740 \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 0
+    level: 7
+  - topic: "\uC138\uACC4"
+    questionText: "\uC911\uAD6D\uC758 \uC218\uB3C4\uB294 \uBCA0\uC774\uC9D5\uC774\uB2E4."
+    isCorrect: 1
+    level: 1
+  - topic: "\uC138\uACC4"
+    questionText: "\uC5D0\uD3A0\uD0D1\uC740 \uB3C5\uC77C \uBCA0\uB97C\uB9B0\uC5D0
+      \uC704\uCE58\uD574 \uC788\uB2E4."
+    isCorrect: 0
+    level: 2
+  - topic: "\uC138\uACC4"
+    questionText: "\uB0A8\uADF9\uC740 \uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uCD94\uC6B4
+      \uB300\uB959\uC774\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uC2A4\uD398\uC778\uC758 \uC804\uD1B5 \uCDA4 \uC911 \uD558\uB098\uB294
+      \uD50C\uB77C\uBA69\uCF54\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uC138\uACC4"
+    questionText: "\uC77C\uC778\uB2F9 \uC5F0\uAC04 \uCEE4\uD53C \uC18C\uBE44\uB7C9\uC774
+      \uAC00\uC7A5 \uB9CE\uC740 \uB098\uB77C\uB294 \uD540\uB780\uB4DC\uC774\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uD638\uC8FC\uC758 \uC218\uB3C4\uB294 \uC2DC\uB4DC\uB2C8\uC774\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uC138\uACC4"
+    questionText: "\uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uC791\uC740 \uB098\uB77C\uB294
+      \uBAA8\uB098\uCF54\uC774\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uC138\uACC4"
+    questionText: "\uBABD\uACE8 \uC81C\uAD6D\uC740 \uC5ED\uC0AC\uC0C1 \uAC00\uC7A5
+      \uB113\uC740 \uC5F0\uC18D\uB41C \uC601\uD1A0\uB97C \uAC00\uC84C\uB358 \uC81C\uAD6D\uC774\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uC544\uB974\uD5E8\uD2F0\uB098\uB294 \uCD95\uAD6C\uC640 \uD0F1\uACE0\uB85C
+      \uC720\uBA85\uD55C \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 1
+    level: 2
+  - topic: "\uC138\uACC4"
+    questionText: "\uC0AC\uC6B0\uB514\uC544\uB77C\uBE44\uC544\uB294 \uC11D\uC720
+      \uC0DD\uC0B0\uB7C9\uC774 \uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uB9CE\uC740
+      \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uC138\uACC4"
+    questionText: "\uC774\uD0C8\uB9AC\uC544\uC758 \uC218\uB3C4\uB294 \uB9C8\uB4DC\uB9AC\uB4DC\uC774\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uD55C\uAD6D\uACFC \uC77C\uBCF8\uC740 \uAC19\uC740 \uC5B8\uC5B4\uB97C
+      \uC0AC\uC6A9\uD55C\uB2E4."
+    isCorrect: 0
+    level: 7
+  - topic: "\uC138\uACC4"
+    questionText: "\uB098\uC774\uC9C0\uB9AC\uC544\uB294 \uC544\uD504\uB9AC\uCE74\uC5D0\uC11C
+      \uC778\uAD6C\uAC00 \uAC00\uC7A5 \uB9CE\uC740 \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uD504\uB791\uC2A4\uC758 \uB300\uD45C\uC801\uC778 \uC74C\uC2DD
+      \uC911 \uD558\uB098\uB294 \uD06C\uB8E8\uC544\uC0C1\uC774\uB2E4."
+    isCorrect: 1
+    level: 1
+  - topic: "\uC138\uACC4"
+    questionText: "\uC601\uAD6D\uC740 \uC720\uB7FD \uC5F0\uD569(EU) \uD68C\uC6D0\uAD6D\uC774\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uC77C\uBCF8\uC758 \uC218\uB3C4\uB294 \uAD50\uD1A0\uC774\uB2E4."
+    isCorrect: 0
+    level: 2
+  - topic: "\uC138\uACC4"
+    questionText: "\uB7EC\uC2DC\uC544\uB294 \uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5
+      \uD070 \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uB192\uC740 \uC0B0\uC740
+      \uC5D0\uBCA0\uB808\uC2A4\uD2B8\uC0B0\uC774\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uC774\uC9D1\uD2B8\uC758 \uD53C\uB77C\uBBF8\uB4DC\uB294 \uACE0\uB300
+      \uB85C\uB9C8 \uC2DC\uB300\uC5D0 \uC9C0\uC5B4\uC84C\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uC138\uACC4"
+    questionText: "\uB178\uB974\uC6E8\uC774\uB294 \uC624\uB85C\uB77C\uB97C \uBCFC
+      \uC218 \uC788\uB294 \uB098\uB77C \uC911 \uD558\uB098\uC774\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uBE0C\uB77C\uC9C8\uC758 \uACF5\uC2DD \uC5B8\uC5B4\uB294 \uC2A4\uD398\uC778\uC5B4\uC774\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uC138\uACC4"
+    questionText: "\uC2A4\uC704\uC2A4\uB294 \uCD08\uCF5C\uB9BF\uACFC \uC2DC\uACC4\uB85C
+      \uC720\uBA85\uD55C \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uB0A8\uC544\uD504\uB9AC\uCE74\uACF5\uD654\uAD6D\uC758 \uC218\uB3C4\uB294
+      \uD558\uB098\uBFD0\uC774\uB2E4."
+    isCorrect: 0
+    level: 7
+  - topic: "\uC138\uACC4"
+    questionText: "\uCFE0\uBC14\uB294 \uBBF8\uAD6D\uACFC \uAD6D\uACBD\uC744 \uB9DE\uB300\uACE0
+      \uC788\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uC774\uC2A4\uD0C4\uBD88\uC740 \uD130\uD0A4\uC758 \uC218\uB3C4\uC774\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uC138\uACC4"
+    questionText: "\uCE90\uB098\uB2E4\uC758 \uC218\uB3C4\uB294 \uC624\uD0C0\uC640\uC774\uB2E4."
+    isCorrect: 1
+    level: 2
+  - topic: "\uC138\uACC4"
+    questionText: "\uC911\uAD6D\uC5D0\uC11C \uC0AC\uC6A9\uB418\uB294 \uACF5\uC2DD
+      \uC5B8\uC5B4\uB294 \uAD11\uB3D9\uC5B4\uC774\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uC544\uB974\uD5E8\uD2F0\uB098\uB294 \uB0A8\uBC18\uAD6C\uC5D0
+      \uC704\uCE58\uD55C \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uC774\uD0C8\uB9AC\uC544\uC758 \uC218\uB3C4\uB294 \uBC00\uB77C\uB178\uC774\uB2E4."
+    isCorrect: 0
+    level: 2
+  - topic: "\uC138\uACC4"
+    questionText: "\uD638\uC8FC\uB294 \uC138\uACC4\uC5D0\uC11C \uC5EC\uC12F \uBC88\uC9F8\uB85C
+      \uD070 \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uD540\uB780\uB4DC\uB294 \uBD81\uC720\uB7FD\uC5D0 \uC704\uCE58\uD55C
+      \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uB3C5\uC77C\uC758 \uACF5\uC6A9\uC5B4 \uC911 \uD558\uB098\uB294
+      \uD504\uB791\uC2A4\uC5B4\uC774\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uBE0C\uB77C\uC9C8\uC740 \uB0A8\uBBF8\uC5D0\uC11C \uAC00\uC7A5
+      \uD070 \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uC138\uACC4"
+    questionText: "\uC0AC\uC6B0\uB514\uC544\uB77C\uBE44\uC544\uB294 \uC774\uC2AC\uB78C\uAD50\uB97C
+      \uAD6D\uAD50\uB85C \uD558\uB294 \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uC138\uACC4"
+    questionText: "\uB300\uD55C\uBBFC\uAD6D\uACFC \uBD81\uD55C\uC740 \uAC19\uC740
+      \uC2DC\uAC01\uB300\uB97C \uC0AC\uC6A9\uD55C\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uC138\uACC4"
+    questionText: "\uD398\uB8E8\uC5D0\uB294 \uB9C8\uCD94\uD53D\uCD94 \uC720\uC801\uC774
+      \uC788\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uC778\uB3C4\uC758 \uB300\uD45C\uC801\uC778 \uC804\uD1B5 \uC758\uC0C1\uC740
+      \uD55C\uBCF5\uC774\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uBA55\uC2DC\uCF54\uB294 \uC2A4\uD398\uC778\uC5B4\uB97C \uACF5\uC2DD
+      \uC5B8\uC5B4\uB85C \uC0AC\uC6A9\uD55C\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uC544\uC774\uC2AC\uB780\uB4DC\uB294 \uC720\uB7FD\uC5F0\uD569(EU)
+      \uD68C\uC6D0\uAD6D\uC774\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uC138\uACC4"
+    questionText: "\uC2A4\uC704\uC2A4\uB294 \uACF5\uC2DD\uC801\uC73C\uB85C \uC218\uB3C4\uAC00
+      \uC5C6\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uC138\uACC4"
+    questionText: "\uC77C\uBCF8\uC758 \uAD6D\uAE30\uB294 \uD770\uC0C9 \uBC14\uD0D5\uC5D0
+      \uD30C\uB780 \uC6D0\uC774 \uADF8\uB824\uC838 \uC788\uB2E4."
+    isCorrect: 0
+    level: 2
+  - topic: "\uC138\uACC4"
+    questionText: "\uADF8\uB9AC\uC2A4\uB294 \uC720\uB7FD\uC5F0\uD569(EU) \uD68C\uC6D0\uAD6D\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uC138\uACC4"
+    questionText: "\uBABD\uACE8\uC740 \uC721\uC9C0\uB85C \uB458\uB7EC\uC2F8\uC778
+      \uB0B4\uB959\uAD6D\uC774\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uBBF8\uAD6D\uC758 \uB3C5\uB9BD\uAE30\uB150\uC77C\uC740 7\uC6D4
+      4\uC77C\uC774\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uC0AC\uBAA8\uC544\uB294 \uC544\uD504\uB9AC\uCE74\uC5D0 \uC704\uCE58\uD55C
+      \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uC138\uACC4"
+    questionText: "\uC774\uC9D1\uD2B8\uC758 \uC218\uB3C4\uB294 \uCE74\uC774\uB85C\uC774\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uB0A8\uADF9 \uB300\uB959\uC5D0\uB294 \uC601\uAD6C\uC801\uC73C\uB85C
+      \uAC70\uC8FC(\uC0C1\uC8FC)\uD558\uB294 \uC778\uAD6C\uAC00 1\uB9CC \uBA85 \uC774\uC0C1\uC774\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uC138\uACC4"
+    questionText: "\uCFE0\uBC14\uB294 \uCE74\uB9AC\uBE0C\uD574\uC5D0 \uC704\uCE58\uD55C
+      \uC12C\uB098\uB77C\uC774\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uC544\uB78D\uC5D0\uBBF8\uB9AC\uD2B8\uC758 \uC218\uB3C4\uB294
+      \uB450\uBC14\uC774\uC774\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uB098\uC77C\uAC15\uC740 \uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5
+      \uAE34 \uAC15\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uC138\uACC4"
+    questionText: "\uB178\uB974\uC6E8\uC774\uB294 \uBD81\uC720\uB7FD \uAD6D\uAC00\uC774\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uC544\uD504\uB9AC\uCE74 \uB300\uB959\uC5D0\uB294 50\uAC1C \uC774\uC0C1\uC758
+      \uB098\uB77C\uAC00 \uC788\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uD0DC\uD3C9\uC591\uC740 \uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5
+      \uD070 \uBC14\uB2E4\uC774\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uB0A8\uADF9 \uB300\uB959\uC5D0\uB294 \uC0AC\uB9C9\uC774 \uC874\uC7AC\uD558\uC9C0
+      \uC54A\uB294\uB2E4."
+    isCorrect: 0
+    level: 7
+  - topic: "\uC138\uACC4"
+    questionText: "\uC720\uB7FD \uB300\uB959\uC758 \uAC00\uC7A5 \uD070 \uB098\uB77C\uB294
+      \uD504\uB791\uC2A4\uC774\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uC138\uACC4"
+    questionText: "\uB300\uC11C\uC591\uC740 \uD0DC\uD3C9\uC591\uBCF4\uB2E4 \uBA74\uC801\uC774
+      \uD06C\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uC791\uC740 \uB300\uB959\uC740
+      \uC624\uC138\uC544\uB2C8\uC544\uC774\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uBD81\uADF9\uD574\uB294 5\uB300\uC591 \uC911\uC5D0\uC11C \uAC00\uC7A5
+      \uC791\uC740 \uBC14\uB2E4\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uC138\uACC4"
+    questionText: "\uB0A8\uBBF8 \uB300\uB959\uC5D0\uC11C \uAC00\uC7A5 \uB113\uC740
+      \uAD6D\uAC00\uB294 \uC544\uB974\uD5E8\uD2F0\uB098\uC774\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uC5D0\uBCA0\uB808\uC2A4\uD2B8\uC0B0\uC740 \uC544\uC2DC\uC544
+      \uB300\uB959\uC5D0 \uC704\uCE58\uD574 \uC788\uB2E4."
+    isCorrect: 1
+    level: 2
+  - topic: "\uC138\uACC4"
+    questionText: "\uADF8\uB9B0\uB780\uB4DC\uB294 \uC544\uC2DC\uC544 \uB300\uB959\uC5D0
+      \uC18D\uD574 \uC788\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uC778\uB3C4\uC591\uC740 5\uB300\uC591 \uC911 \uC138 \uBC88\uC9F8\uB85C
+      \uD070 \uBC14\uB2E4\uC774\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uC544\uB9C8\uC874\uAC15\uC740 \uC544\uD504\uB9AC\uCE74 \uB300\uB959\uC5D0
+      \uC874\uC7AC\uD55C\uB2E4."
+    isCorrect: 0
+    level: 2
+  - topic: "\uC138\uACC4"
+    questionText: "\uBE59\uD558\uC758 \uB300\uBD80\uBD84\uC740 \uB0A8\uADF9\uACFC
+      \uADF8\uB9B0\uB780\uB4DC\uC5D0 \uC874\uC7AC\uD55C\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uBD81\uC544\uBA54\uB9AC\uCE74\uC5D0\uB294 20\uAC1C \uC774\uC0C1\uC758
+      \uB098\uB77C\uAC00 \uC788\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uC0AC\uC6B0\uB514\uC544\uB77C\uBE44\uC544\uC5D0\uB294 \uC601\uAD6C\uC801\uC778
+      \uAC15\uC774 \uC874\uC7AC\uD558\uC9C0 \uC54A\uB294\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uC138\uACC4"
+    questionText: "\uC2DC\uBCA0\uB9AC\uC544\uB294 \uB0A8\uBBF8 \uB300\uB959\uC5D0
+      \uC704\uCE58\uD55C \uC9C0\uC5ED\uC774\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uC544\uC2DC\uC544\uB294 \uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5
+      \uD070 \uB300\uB959\uC774\uB2E4."
+    isCorrect: 1
+    level: 2
+  - topic: "\uC138\uACC4"
+    questionText: "\uC720\uB7FD\uACFC \uC544\uC2DC\uC544\uC758 \uACBD\uACC4\uB294
+      \uC6B0\uB784\uC0B0\uB9E5\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uC138\uACC4"
+    questionText: "\uBD81\uADF9\uD574\uB294 \uC77C \uB144 \uB0B4\uB0B4 \uC5BC\uC5B4
+      \uC788\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uB098\uB77C\uAC00 \uAC00\uC7A5 \uB9CE\uC740 \uB300\uB959\uC740
+      \uC544\uD504\uB9AC\uCE74\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uC138\uACC4"
+    questionText: "\uD638\uC8FC\uB294 \uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uC791\uC740
+      \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uC138\uACC4"
+    questionText: "\uB0A8\uC544\uBA54\uB9AC\uCE74\uC5D0\uB294 20\uAC1C \uC774\uC0C1\uC758
+      \uB098\uB77C\uAC00 \uC788\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uC138\uACC4"
+    questionText: "\uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uB192\uC740 \uD3ED\uD3EC\uB294
+      \uB098\uC774\uC544\uAC00\uB77C \uD3ED\uD3EC\uC774\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uC138\uACC4"
+    questionText: "\uADF8\uB79C\uB4DC\uCE90\uB2C8\uC5B8\uC740 \uC720\uB7FD \uB300\uB959\uC5D0
+      \uC704\uCE58\uD574 \uC788\uB2E4."
+    isCorrect: 0
+    level: 2
+  - topic: "\uC138\uACC4"
+    questionText: "\uB300\uC11C\uC591\uC740 \uD0DC\uD3C9\uC591\uBCF4\uB2E4 \uC9E0\uBB3C
+      \uB18D\uB3C4\uAC00 \uB192\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uC138\uACC4"
+    questionText: "\uB9C8\uB2E4\uAC00\uC2A4\uCE74\uB974\uB294 \uC544\uD504\uB9AC\uCE74
+      \uB300\uB959\uC5D0 \uC18D\uD55C \uC12C\uB098\uB77C\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uC138\uACC4"
+    questionText: "\uAD6D\uC81C \uD45C\uC900\uC2DC(UTC+0)\uB294 \uC601\uAD6D\uC758
+      \uADF8\uB9AC\uB2C8\uCE58 \uCC9C\uBB38\uB300\uB97C \uAE30\uC900\uC73C\uB85C
+      \uD55C\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uBAA8\uB4E0 \uC720\uB7FD \uC5F0\uD569(EU) \uD68C\uC6D0\uAD6D\uC740
+      \uC720\uB85C(EUR)\uB97C \uACF5\uC2DD \uD1B5\uD654\uB85C \uC0AC\uC6A9\uD55C\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uC9C0\uAD6C\uC0C1\uC5D0\uC11C \uAC00\uC7A5 \uBA74\uC801\uC774
+      \uB113\uC740 \uC0AC\uB9C9\uC740 \uC0AC\uD558\uB77C \uC0AC\uB9C9\uC774\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uD604\uC7AC\uAE4C\uC9C0 \uACF5\uC2DD\uC801\uC73C\uB85C \uC778\uC815\uB41C
+      \uAD6D\uAC00\uC758 \uC218\uB294 200\uAC1C\uB97C \uCD08\uACFC\uD55C\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uB85C\uB9C8 \uC81C\uAD6D\uC740 \uC11C\uB85C\uB9C8 \uC81C\uAD6D\uACFC
+      \uB3D9\uB85C\uB9C8 \uC81C\uAD6D\uC73C\uB85C \uBD84\uB9AC\uB41C \uD6C4, \uC11C\uB85C\uB9C8
+      \uC81C\uAD6D\uC774 \uB354 \uC624\uB798 \uC874\uC18D\uD588\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uBABD\uACE8 \uC81C\uAD6D\uC758 \uC804\uC131\uAE30 \uB2F9\uC2DC,
+      \uC138\uACC4 \uC5ED\uC0AC\uC0C1 \uAC00\uC7A5 \uB113\uC740 \uB2E8\uC77C \uC81C\uAD6D\uC744
+      \uD615\uC131\uD588\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uC804 \uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uB9CE\uC774 \uC0AC\uC6A9\uB418\uB294
+      \uC5B8\uC5B4\uB294 \uC601\uC5B4\uC774\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uB300\uC11C\uC591\uC5D0\uB294 '\uB300\uC11C\uC591 \uC911\uC559
+      \uD574\uB839'\uC774\uB77C\uB294 \uAC70\uB300\uD55C \uD574\uC800 \uC0B0\uB9E5\uC774
+      \uC874\uC7AC\uD55C\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uB300\uD55C\uBBFC\uAD6D\uACFC \uBD81\uD55C\uC740 \uACF5\uC2DD\uC801\uC73C\uB85C
+      '\uC804\uC7C1 \uC0C1\uD0DC'\uB97C \uB05D\uB0B8 \uD3C9\uD654\uD611\uC815\uC744
+      \uCCB4\uACB0\uD55C \uC801\uC774 \uC788\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uC138\uACC4\uC5D0\uC11C \uC778\uAD6C \uBC00\uB3C4\uAC00 \uAC00\uC7A5
+      \uB192\uC740 \uB098\uB77C\uB294 \uBC29\uAE00\uB77C\uB370\uC2DC\uC774\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uC544\uB9C8\uC874 \uAC15\uC740 \uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5
+      \uAE34 \uAC15\uC774\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uBC14\uD2F0\uCE78 \uC2DC\uAD6D\uC740 \uC138\uACC4\uC5D0\uC11C
+      \uC720\uC77C\uD558\uAC8C \uACF5\uC2DD\uC801\uC778 \uCCA0\uB3C4\uAC00 \uC5C6\uB294
+      \uB098\uB77C\uC774\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uB0A8\uADF9\uC740 \uAD6D\uC81C\uC801\uC73C\uB85C \uC5B4\uB5A4
+      \uAD6D\uAC00\uC758 \uC601\uD1A0\uB85C\uB3C4 \uC778\uC815\uBC1B\uC9C0 \uC54A\uB294\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uAE4A\uC740 \uD574\uAD6C\uB294
+      \uD544\uB9AC\uD540 \uD574\uAD6C\uC774\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uC138\uACC4"
+    questionText: "\uC138\uACC4 \uCD5C\uCD08\uC758 \uBBFC\uC8FC\uC8FC\uC758 \uAD6D\uAC00\uB294
+      \uACE0\uB300 \uB85C\uB9C8 \uACF5\uD654\uAD6D\uC774\uC5C8\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uBC95\uB960"
+    questionText: "\uC808\uB3C4\uC8C4\uB294 \uD53C\uD574\uC790\uC758 \uB3D9\uC758
+      \uC5C6\uC774 \uD0C0\uC778\uC758 \uBB3C\uAC74\uC744 \uD6D4\uCE58\uB294 \uD589\uC704\uB97C
+      \uC758\uBBF8\uD55C\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uBC95\uB960"
+    questionText: "\uBAA8\uB4E0 \uB098\uB77C\uC5D0\uC11C \uC0AC\uAE30\uC8C4\uB294
+      \uD615\uC0AC \uCC98\uBC8C \uB300\uC0C1\uC774\uB2E4."
+    isCorrect: 0
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uC74C\uC8FC\uC6B4\uC804\uC740 \uCD08\uBC94\uC774\uB77C\uB3C4
+      \uBC95\uC801\uC73C\uB85C \uCC98\uBC8C\uBC1B\uC744 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uBC95\uB960"
+    questionText: "\uD574\uD0B9\uC740 \uB2E8\uC21C\uD788 \uCEF4\uD4E8\uD130\uB97C
+      \uC870\uC791\uD558\uB294 \uD589\uC704\uC774\uBBC0\uB85C \uBD88\uBC95\uC774
+      \uC544\uB2C8\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uD3ED\uD589\uC8C4\uB294 \uD53C\uD574\uC790\uAC00 \uCC98\uBC8C\uC744
+      \uC6D0\uD558\uC9C0 \uC54A\uC73C\uBA74 \uCC98\uBC8C\uD560 \uC218 \uC5C6\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uBC95\uB960"
+    questionText: "\uC808\uB3C4\uB294 \uD615\uBC95\uC0C1 \uBC94\uC8C4\uB85C \uAC04\uC8FC\uB41C\uB2E4."
+    isCorrect: 1
+    level: 2
+  - topic: "\uBC95\uB960"
+    questionText: "\uBAA8\uB4E0 \uB098\uB77C\uC5D0\uC11C \uC0AC\uD615\uC81C\uB3C4\uAC00
+      \uD569\uBC95\uC774\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uC0AC\uC774\uBC84 \uBC94\uC8C4\uB294 \uC624\uD504\uB77C\uC778
+      \uBC94\uC8C4\uBCF4\uB2E4 \uCC98\uBC8C\uC774 \uAC00\uBCCD\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uBC95\uB960"
+    questionText: "\uC74C\uC8FC \uC6B4\uC804\uC740 \uBC94\uC8C4 \uD589\uC704\uC5D0
+      \uD574\uB2F9\uD55C\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uBC95\uB960"
+    questionText: "\uD615\uBC95\uC0C1 \uBBF8\uC131\uB144\uC790\uB294 \uC5B4\uB5A0\uD55C
+      \uACBD\uC6B0\uC5D0\uB3C4 \uCC98\uBC8C\uBC1B\uC9C0 \uC54A\uB294\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uBC95\uB960"
+    questionText: "\uBA85\uC608\uD6FC\uC190\uC740 \uD53C\uD574\uC790\uAC00 \uC6D0\uD558\uC9C0
+      \uC54A\uC73C\uBA74 \uCC98\uBC8C\uD560 \uC218 \uC5C6\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uBC95\uB960"
+    questionText: "\uBD88\uBC95 \uB3C4\uBC15\uC740 \uBC94\uC8C4\uC5D0 \uD574\uB2F9\uD55C\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uBC95\uB960"
+    questionText: "\uD2B9\uC815 \uC0C1\uD669\uC5D0\uC11C \uD3ED\uB825\uC740 \uC815\uB2F9\uBC29\uC704\uB85C
+      \uC778\uC815\uB420 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uB1CC\uBB3C \uC218\uC218\uB294 \uACF5\uC9C1\uC790\uB9CC \uCC98\uBC8C\uBC1B\uB294\uB2E4."
+    isCorrect: 0
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uD574\uD0B9\uC740 \uC815\uBCF4 \uBCF4\uD638\uBC95\uC5D0 \uB530\uB77C
+      \uBC94\uC8C4\uB85C \uAC04\uC8FC\uB420 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uBC95\uB960"
+    questionText: "\uAD50\uD1B5\uC0AC\uACE0\uB97C \uB0B8 \uD6C4 \uB3C4\uB9DD\uAC00\uB294
+      \uAC83\uC740 \uBC94\uC8C4\uAC00 \uC544\uB2C8\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uBC95\uB960"
+    questionText: "\uD3ED\uD589\uACFC \uC0C1\uD574\uB294 \uBC95\uC801\uC73C\uB85C
+      \uB3D9\uC77C\uD55C \uBC94\uC8C4 \uC720\uD615\uC774\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uD615\uBC95\uC0C1 \uAC15\uB3C4\uC640 \uC808\uB3C4\uB294 \uAC19\uC740
+      \uBC94\uC8C4\uB85C \uCDE8\uAE09\uB41C\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uC0AC\uAE30\uC8C4\uB294 \uAE08\uC804\uC801 \uD53C\uD574\uAC00
+      \uBC1C\uC0DD\uD574\uC57C\uB9CC \uC131\uB9BD\uB41C\uB2E4."
+    isCorrect: 0
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uAD6D\uC81C\uD615\uC0AC\uC7AC\uD310\uC18C(ICC)\uB294 \uC804\uC7C1
+      \uBC94\uC8C4\uB9CC\uC744 \uB2E4\uB8EC\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uBB34\uACE0\uC8C4\uB294 \uD5C8\uC704 \uC0AC\uC2E4\uB85C \uD0C0\uC778\uC744
+      \uACE0\uC18C\uD588\uC744 \uB54C \uC131\uB9BD\uD55C\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uACF5\uAC08\uC8C4\uB294 \uD611\uBC15\uC744 \uD1B5\uD574 \uC0C1\uB300\uBC29\uC774
+      \uC2A4\uC2A4\uB85C \uC7AC\uC0B0\uC744 \uB118\uAE30\uB3C4\uB85D \uB9CC\uB4DC\uB294
+      \uBC94\uC8C4\uC774\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uC870\uC9C1 \uBC94\uC8C4\uB294 \uC77C\uBC18\uC801\uC73C\uB85C
+      \uAC1C\uC778 \uBC94\uC8C4\uBCF4\uB2E4 \uD615\uB7C9\uC774 \uB0AE\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uAC15\uC694\uC8C4\uB294 \uBB3C\uB9AC\uC801\uC778 \uD3ED\uB825
+      \uC5C6\uC774\uB3C4 \uC131\uB9BD\uB420 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uAD6D\uAC00 \uB0B4\uC5D0\uC11C \uBC1C\uC0DD\uD55C \uBAA8\uB4E0
+      \uBC94\uC8C4\uB294 \uBC18\uB4DC\uC2DC \uD574\uB2F9 \uAD6D\uAC00\uC5D0\uC11C\uB9CC
+      \uC7AC\uD310\uC744 \uBC1B\uC744 \uC218 \uC788\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uBC95\uB960"
+    questionText: "\uACBD\uC81C \uBC94\uC8C4\uB294 \uAC15\uB825 \uBC94\uC8C4\uBCF4\uB2E4
+      \uC0AC\uD68C\uC801 \uD53C\uD574\uAC00 \uC801\uAE30 \uB54C\uBB38\uC5D0 \uD615\uB7C9\uC774
+      \uAC00\uBCCD\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uD2B9\uC815 \uAD6D\uAC00\uC5D0\uC11C\uB294 \uB9C8\uC57D \uBC94\uC8C4\uAC00
+      \uC0AC\uD615\uC5D0 \uD574\uB2F9\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uBC95\uB960\uC0C1 \uBAA8\uB4E0 \uC0B4\uC778\uC740 \uB3D9\uC77C\uD55C
+      \uBC95\uC801 \uCC98\uBC8C\uC744 \uBC1B\uB294\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uBC95\uB960"
+    questionText: "\uD574\uC678\uC5D0\uC11C \uBC94\uC8C4\uB97C \uC800\uC9C0\uB978
+      \uACBD\uC6B0 \uBCF8\uAD6D\uC73C\uB85C \uC1A1\uD658\uB418\uC9C0 \uC54A\uB294
+      \uD55C \uCC98\uBC8C\uBC1B\uC744 \uC218 \uC5C6\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uC0AC\uC774\uBC84 \uBC94\uC8C4\uB294 \uBB3C\uB9AC\uC801 \uC99D\uAC70\uAC00
+      \uBD80\uC871\uD558\uB354\uB77C\uB3C4 IP \uCD94\uC801 \uB4F1\uC744 \uD1B5\uD574
+      \uCC98\uBC8C\uB420 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uBD88\uBC95 \uC790\uAE08 \uC138\uD0C1\uC740 \uD2B9\uC815 \uAD6D\uAC00\uC5D0\uC11C\uB9CC
+      \uBD88\uBC95\uC73C\uB85C \uAC04\uC8FC\uB41C\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uAD6D\uAC00 \uAC04 \uBC94\uC8C4\uC778 \uC778\uB3C4 \uC870\uC57D\uC774
+      \uCCB4\uACB0\uB418\uC9C0 \uC54A\uC740 \uACBD\uC6B0 \uBC94\uC8C4\uC790\uB97C
+      \uBC18\uB4DC\uC2DC \uBCF8\uAD6D\uC73C\uB85C \uC1A1\uD658\uD574\uC57C \uD55C\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uD14C\uB7EC \uD589\uC704\uB294 \uAD6D\uC81C\uBC95\uC0C1 \uC5B4\uB5A4
+      \uACBD\uC6B0\uC5D0\uB3C4 \uC815\uB2F9\uD654\uB420 \uC218 \uC5C6\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uBC95\uB960"
+    questionText: "\uC0B4\uC778\uC8C4\uB294 \uACFC\uC2E4\uC774 \uC5C6\uB294 \uD55C
+      \uC0AC\uD615, \uBB34\uAE30\uC9D5\uC5ED \uB610\uB294 10\uB144 \uC774\uC0C1\uC758
+      \uC9D5\uC5ED\uD615\uC744 \uC120\uACE0\uBC1B\uB294\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uC0AC\uC774\uBC84 \uBC94\uC8C4\uB294 \uC2E4\uC9C8\uC801\uC778
+      \uBB3C\uB9AC\uC801 \uD53C\uD574\uAC00 \uC5C6\uAE30 \uB54C\uBB38\uC5D0 \uB2E4\uB978
+      \uBC94\uC8C4\uBCF4\uB2E4 \uD615\uB7C9\uC774 \uB0AE\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uB1CC\uBB3C\uC8C4\uB294 \uACF5\uBB34\uC6D0\uB9CC\uC774 \uCC98\uBC8C
+      \uB300\uC0C1\uC774 \uB41C\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uC99D\uAC70 \uC870\uC791\uC740 \uD615\uC0AC \uC18C\uC1A1\uBC95\uC0C1
+      \uBC94\uC8C4\uAC00 \uC544\uB2C8\uBBC0\uB85C \uCC98\uBC8C\uBC1B\uC9C0 \uC54A\uB294\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uBC95\uB960"
+    questionText: "\uAC15\uB3C4\uC8C4\uC640 \uC808\uB3C4\uC8C4\uB294 \uD53C\uD574\uC790\uC758
+      \uBC18\uC751\uACFC \uAD00\uACC4\uC5C6\uC774 \uB3D9\uC77C\uD55C \uCC98\uBC8C\uC744
+      \uBC1B\uB294\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uBB34\uAE30 \uBC00\uB9E4\uB294 \uAD6D\uC81C\uC801\uC73C\uB85C
+      \uAE08\uC9C0\uB41C \uBC94\uC8C4 \uD589\uC704\uC774\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uD2B9\uC815 \uAD6D\uAC00\uC5D0\uC11C\uB294 \uC678\uAD6D\uC778\uB3C4
+      \uAD6D\uAC00 \uBCF4\uC548\uBC95 \uC704\uBC18\uC73C\uB85C \uCC98\uBC8C\uBC1B\uC744
+      \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uACBD\uC81C \uBC94\uC8C4\uB294 \uAC15\uB825 \uBC94\uC8C4\uC5D0
+      \uBE44\uD574 \uD53C\uD574\uC790\uAC00 \uBA85\uD655\uD558\uC9C0 \uC54A\uC544
+      \uCC98\uBC8C\uC774 \uBD88\uAC00\uB2A5\uD558\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uBC95\uB960"
+    questionText: "\uB9C8\uC57D \uBC94\uC8C4\uB294 \uB2E8\uC21C \uC18C\uC9C0\uC640
+      \uC720\uD1B5\uC774 \uB3D9\uC77C\uD55C \uCC98\uBC8C\uC744 \uBC1B\uB294\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uBCF4\uC774\uC2A4 \uD53C\uC2F1\uC5D0 \uAC00\uB2F4\uD55C \uC0AC\uB78C\uC740
+      \uC9C1\uC811 \uB3C8\uC744 \uBC1B\uC9C0 \uC54A\uC544\uB3C4 \uACF5\uBC94\uC73C\uB85C
+      \uCC98\uBC8C\uBC1B\uC744 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uC2A4\uB9C8\uD2B8 \uACC4\uC57D\uC744 \uC774\uC6A9\uD55C \uAE08\uC735
+      \uC0AC\uAE30\uB294 \uBC95\uC801\uC73C\uB85C \uCC98\uBC8C\uD560 \uC218 \uC5C6\uB2E4."
+    isCorrect: 0
+    level: 10
+  - topic: "\uBC95\uB960"
+    questionText: "\uAD6D\uC81C\uC801\uC778 \uD574\uD0B9 \uBC94\uC8C4\uB294 \uBC94\uC778\uC774
+      \uC18D\uD55C \uAD6D\uAC00\uC5D0\uC11C\uB9CC \uCC98\uBC8C\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uBD88\uBC95 \uB3C4\uBC15\uC740 \uC628\uB77C\uC778\uC5D0\uC11C
+      \uC774\uB8E8\uC5B4\uC9C4 \uACBD\uC6B0 \uCC98\uBC8C\uC774 \uBD88\uAC00\uB2A5\uD558\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uC870\uC9C1 \uBC94\uC8C4\uC5D0 \uAC00\uB2F4\uD55C \uBAA8\uB4E0
+      \uC0AC\uB78C\uC740 \uB3D9\uC77C\uD55C \uD615\uB7C9\uC744 \uBC1B\uB294\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uBBF8\uAD6D\uACFC EU\uC5D0\uC11C\uB294 \uAC1C\uC778\uC815\uBCF4
+      \uBCF4\uD638\uBC95 \uC704\uBC18\uC774 \uAE30\uC5C5\uC5D0 \uB300\uD574 \uB9E4\uC6B0
+      \uAC15\uD55C \uCC98\uBC8C\uC744 \uBD80\uACFC\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uBC95\uB960"
+    questionText: "\uC77C\uBCF8\uBC95\uC5D0\uC11C\uB294 \uC0B4\uC778\uC8C4\uC758
+      \uCD5C\uC18C \uD615\uB7C9\uC774 \uC9D5\uC5ED 5\uB144\uC774\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uBBF8\uAD6D \uC77C\uBD80 \uC8FC\uC5D0\uC11C\uB294 \uC808\uB3C4\uC8C4\uB85C
+      \uC190\uC744 \uC808\uB2E8\uD558\uB294 \uD615\uBC8C\uC774 \uC874\uC7AC\uD55C\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uB3C5\uC77C\uC5D0\uC11C\uB294 \uBA85\uC608\uD6FC\uC190\uC8C4\uB85C
+      \uC778\uD574 \uC9D5\uC5ED\uD615\uC744 \uC120\uACE0\uBC1B\uC744 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uD504\uB791\uC2A4\uC5D0\uC11C\uB294 16\uC138 \uBBF8\uB9CC\uC758
+      \uC544\uB3D9\uC744 \uCCB4\uBC8C\uD558\uB294 \uAC83\uC774 \uBC95\uC801\uC73C\uB85C
+      \uAE08\uC9C0\uB418\uC5B4 \uC788\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uBC95\uB960"
+    questionText: "\uC0AC\uC6B0\uB514\uC544\uB77C\uBE44\uC544\uC5D0\uC11C\uB294 \uAC04\uD1B5\uC8C4\uB85C
+      \uCD5C\uACE0 \uC0AC\uD615\uAE4C\uC9C0 \uC120\uACE0\uB420 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 10
+  - topic: "\uBC95\uB960"
+    questionText: "\uCE90\uB098\uB2E4\uC5D0\uC11C\uB294 \uB9C8\uB9AC\uD654\uB098
+      \uC18C\uC9C0\uAC00 \uC5EC\uC804\uD788 \uBD88\uBC95\uC774\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uBC95\uB960"
+    questionText: "\uC2F1\uAC00\uD3EC\uB974\uC5D0\uC11C\uB294 \uACF5\uACF5\uC7A5\uC18C\uC5D0\uC11C
+      \uAECC\uC744 \uC539\uB294 \uAC83\uC774 \uBD88\uBC95\uC774\uB2E4."
+    isCorrect: 1
+    level: 3
+  - topic: "\uBC95\uB960"
+    questionText: "\uC2A4\uC704\uC2A4\uC5D0\uC11C\uB294 \uC18D\uB3C4 \uC81C\uD55C\uC744
+      \uCD08\uACFC\uD558\uBA74 \uCC28\uB7C9\uC744 \uC555\uC218\uB2F9\uD560 \uC218
+      \uC788\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uB300\uD55C\uBBFC\uAD6D\uC5D0\uC11C\uB294 \uC74C\uC8FC\uC6B4\uC804
+      \uCD08\uBC94\uB3C4 \uBB34\uC870\uAC74 \uC9D5\uC5ED\uD615\uC744 \uC120\uACE0\uBC1B\uB294\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uBC95\uB960"
+    questionText: "\uC774\uB780\uC5D0\uC11C\uB294 \uB3C4\uB451\uC9C8\uC744 \uD558\uB2E4\uAC00
+      \uC801\uBC1C\uB418\uBA74 \uC190\uBAA9\uC744 \uC808\uB2E8\uD558\uB294 \uD615\uBC8C\uC774
+      \uC874\uC7AC\uD55C\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uBBF8\uAD6D\uC5D0\uC11C\uB294 \uC5F0\uBC29\uC815\uBD80 \uCC28\uC6D0\uC5D0\uC11C
+      \uBAA8\uB4E0 \uC8FC\uC5D0\uC11C \uC0AC\uD615\uC81C\uAC00 \uC2DC\uD589\uB418\uACE0
+      \uC788\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uB178\uB974\uC6E8\uC774\uC5D0\uC11C\uB294 \uB300\uB7C9\uC0B4\uC0C1\uC744
+      \uC81C\uC678\uD558\uBA74 \uCD5C\uACE0 \uD615\uB7C9\uC774 21\uB144\uC744 \uB118\uC9C0
+      \uC54A\uB294\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uD638\uC8FC\uC5D0\uC11C\uB294 \uACF5\uACF5\uC7A5\uC18C\uC5D0\uC11C
+      \uC54C\uBAB8\uC73C\uB85C \uC0B0\uCC45\uD558\uB294 \uAC83\uC774 \uBD88\uBC95\uC774
+      \uC544\uB2C8\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uB124\uB35C\uB780\uB4DC\uC5D0\uC11C\uB294 \uACBD\uBC94\uC8C4\uC790\uC758
+      \uC2E0\uC6D0\uC744 \uACF5\uAC1C\uD558\uB294 \uAC83\uC774 \uBC95\uC801\uC73C\uB85C
+      \uAE08\uC9C0\uB418\uC5B4 \uC788\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uC2A4\uC6E8\uB374\uC5D0\uC11C\uB294 \uACBD\uCC30\uC774 \uD5C8\uB77D
+      \uC5C6\uC774 \uAC1C\uC778\uC758 \uD1B5\uC2E0\uC744 \uAC10\uCCAD\uD560 \uC218
+      \uC788\uB2E4."
+    isCorrect: 0
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uB124\uB35C\uB780\uB4DC\uC5D0\uC11C\uB294 \uBAA8\uB4E0 \uB9C8\uC57D\uC774
+      \uD569\uBC95\uC774\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uBC95\uB960"
+    questionText: "\uC0AC\uC6B0\uB514\uC544\uB77C\uBE44\uC544\uC5D0\uC11C\uB294 \uB3C4\uB451\uC9C8\uC744
+      \uD558\uBA74 \uC190\uC744 \uC808\uB2E8\uD558\uB294 \uD615\uBC8C\uC774 \uC874\uC7AC\uD55C\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uB3C5\uC77C\uC5D0\uC11C\uB294 \uD0C8\uC625\uC744 \uC2DC\uB3C4\uD558\uB294
+      \uAC83\uC774 \uD569\uBC95\uC774\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uBBF8\uAD6D \uD14D\uC0AC\uC2A4\uC5D0\uC11C\uB294 \uB9D0\uC5D0\uAC8C
+      \uC220\uC744 \uBA39\uC774\uB294 \uAC83\uC774 \uBD88\uBC95\uC774\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uD504\uB791\uC2A4\uC5D0\uC11C\uB294 \uB3FC\uC9C0\uC5D0\uAC8C
+      '\uB098\uD3F4\uB808\uC639'\uC774\uB77C\uB294 \uC774\uB984\uC744 \uBD99\uC774\uB294
+      \uAC83\uC774 \uBD88\uBC95\uC774\uB2E4."
+    isCorrect: 1
+    level: 5
+  - topic: "\uBC95\uB960"
+    questionText: "\uC77C\uBCF8\uC5D0\uC11C\uB294 \uACBD\uCC30\uC774 \uC2E0\uCCB4\uC218\uC0C9
+      \uC5C6\uC774 \uC2DC\uBBFC\uC758 \uAC00\uBC29\uC744 \uAC80\uC0AC\uD560 \uC218
+      \uC788\uB2E4."
+    isCorrect: 0
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uBD81\uD55C\uC5D0\uC11C\uB294 TV\uB97C \uBCF4\uB2E4\uAC00 \uAEBC\uB3C4
+      \uBC94\uC8C4\uB85C \uCC98\uBC8C\uBC1B\uC744 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uCE90\uB098\uB2E4\uC5D0\uC11C\uB294 \uB3D9\uC804 25\uAC1C \uC774\uC0C1\uC744
+      \uD55C \uBC88\uC5D0 \uC0AC\uC6A9\uD558\uB294 \uAC83\uC774 \uBD88\uBC95\uC774\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uD638\uC8FC\uC5D0\uC11C\uB294 \uD584\uBC84\uAC70\uB97C \uC138\uC6CC\uC11C
+      \uBA39\uC73C\uBA74 \uBC8C\uAE08\uC744 \uB0B4\uC57C \uD55C\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uBC95\uB960"
+    questionText: "\uC911\uAD6D\uC5D0\uC11C\uB294 \uC628\uB77C\uC778 \uAC8C\uC784\uC744
+      3\uC2DC\uAC04 \uC774\uC0C1 \uD558\uBA74 \uCC98\uBC8C\uBC1B\uB294\uB2E4."
+    isCorrect: 0
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uB7EC\uC2DC\uC544\uC5D0\uC11C\uB294 \uC774\uC2AC\uB78C\uC2DD
+      \uD788\uC7A1\uC744 \uCC29\uC6A9\uD558\uB294 \uAC83\uC774 \uBD88\uBC95\uC774\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uC774\uD0C8\uB9AC\uC544\uC5D0\uC11C\uB294 \uBE44\uB458\uAE30\uC5D0\uAC8C
+      \uBA39\uC774\uB97C \uC8FC\uB294 \uAC83\uC774 \uBD88\uBC95\uC774\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uBC95\uB960"
+    questionText: "\uBA55\uC2DC\uCF54\uC5D0\uC11C\uB294 \uACBD\uCC30\uC774 \uC2DC\uBBFC\uC5D0\uAC8C
+      \uB1CC\uBB3C\uC744 \uBC1B\uC744 \uACBD\uC6B0, \uC77C\uBD80\uB294 \uBC18\uD658\uD574\uC57C
+      \uD55C\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uC778\uB3C4\uC5D0\uC11C\uB294 \uACF5\uACF5\uC7A5\uC18C\uC5D0\uC11C
+      \uC560\uC815\uC744 \uD45C\uD604\uD558\uB294 \uAC83\uC774 \uBC95\uC801\uC73C\uB85C
+      \uAE08\uC9C0\uB418\uC5B4 \uC788\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uBBF8\uAD6D \uCF5C\uB85C\uB77C\uB3C4\uC8FC\uC5D0\uC11C\uB294
+      \uBE57\uC18D\uC5D0\uC11C \uB9D0\uC744 \uD0C0\uB294 \uAC83\uC774 \uBD88\uBC95\uC774\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uBC95\uB960"
+    questionText: "\uD504\uB791\uC2A4\uC5D0\uC11C\uB294 \uBC84\uC2A4\uC5D0\uC11C
+      \uD53C\uC544\uB178\uB97C \uC5F0\uC8FC\uD558\uB294 \uAC83\uC774 \uBD88\uBC95\uC774\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uBC95\uB960"
+    questionText: "\uB0A8\uC544\uD504\uB9AC\uCE74\uACF5\uD654\uAD6D\uC5D0\uC11C\uB294
+      \uACF0 \uC778\uD615\uC744 \uC18C\uC720\uD558\uB294 \uAC83\uC774 \uAE08\uC9C0\uB418\uC5B4
+      \uC788\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uBC95\uB960"
+    questionText: "\uB374\uB9C8\uD06C\uC5D0\uC11C\uB294 \uCC28\uB97C \uD0C0\uAE30
+      \uC804\uC5D0 \uCC28\uB7C9 \uBC11\uC5D0 \uC0AC\uB78C\uC774 \uC788\uB294\uC9C0
+      \uD655\uC778\uD574\uC57C \uD55C\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uC774\uB780\uC5D0\uC11C\uB294 \uBC14\uBE44 \uC778\uD615\uC744
+      \uD310\uB9E4\uD558\uB294 \uAC83\uC774 \uBD88\uBC95\uC774\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uC2F1\uAC00\uD3EC\uB974\uC5D0\uC11C\uB294 \uACF5\uACF5 \uD654\uC7A5\uC2E4
+      \uC0AC\uC6A9 \uD6C4 \uBB3C\uC744 \uB0B4\uB9AC\uC9C0 \uC54A\uC73C\uBA74 \uBC8C\uAE08\uC744
+      \uBD80\uACFC\uBC1B\uC744 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uBBF8\uAD6D \uD50C\uB85C\uB9AC\uB2E4\uC5D0\uC11C\uB294 \uC790\uB3D9\uCC28\uB97C
+      \uD6C4\uC9C4\uD560 \uB54C \uCC3D\uBB38\uC744 \uC5F4\uACE0 \uC788\uC5B4\uC57C
+      \uD55C\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uBC95\uB960"
+    questionText: "\uC774\uC2A4\uB77C\uC5D8\uC5D0\uC11C\uB294 \uC8FC\uC77C(\uC548\uC2DD\uC77C)\uC5D0
+      \uC5D8\uB9AC\uBCA0\uC774\uD130 \uBC84\uD2BC\uC744 \uC9C1\uC811 \uB20C\uB7EC\uC11C\uB294
+      \uC548 \uB41C\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uCE90\uB098\uB2E4\uC5D0\uC11C\uB294 \uB9C8\uC220\uC0AC \uD589\uC138
+      \uAE08\uC9C0\uBC95\uC774\uB77C\uB294 \uAC83\uC774 \uC874\uC7AC\uD588\uB2E4."
+    isCorrect: 1
+    level: 9
+  - topic: "\uBC95\uB960"
+    questionText: "\uB3C5\uC77C\uC5D0\uC11C\uB294 \uC790\uB3D9\uCC28\uAC00 \uACE0\uC18D\uB3C4\uB85C\uC5D0\uC11C
+      \uC5F0\uB8CC\uAC00 \uB5A8\uC5B4\uC9C0\uB294 \uAC83\uC774 \uBD88\uBC95\uC774\uB2E4."
+    isCorrect: 1
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uD0DC\uAD6D\uC5D0\uC11C\uB294 \uACF5\uACF5\uC7A5\uC18C\uC5D0\uC11C
+      \uC18D\uC637\uC744 \uC785\uC9C0 \uC54A\uC73C\uBA74 \uBC8C\uAE08\uC744 \uBD80\uACFC\uBC1B\uC744
+      \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uC2A4\uD398\uC778\uC5D0\uC11C\uB294 \uACF5\uC6D0\uC5D0\uC11C
+      \uB0AE\uC7A0\uC744 \uC790\uB294 \uAC83\uC774 \uBC95\uC801\uC73C\uB85C \uAE08\uC9C0\uB418\uC5B4
+      \uC788\uB2E4."
+    isCorrect: 0
+    level: 4
+  - topic: "\uBC95\uB960"
+    questionText: "\uC624\uC2A4\uD2B8\uB9AC\uC544\uC5D0\uC11C\uB294 \uAC15\uC544\uC9C0\uC5D0\uAC8C
+      \uD2B9\uC815\uD55C \uD5E4\uC5B4\uC2A4\uD0C0\uC77C\uC744 \uD558\uBA74 \uBC8C\uAE08\uC744
+      \uB0B4\uC57C \uD55C\uB2E4."
+    isCorrect: 0
+    level: 3
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D\uC5D0\uC11C\uB294 \uD615\uBC95\uC0C1 \uC808\uB3C4\uC8C4\uB97C
+      \uBC94\uD558\uBA74 \uBB34\uC870\uAC74 \uC2E4\uD615\uC744 \uC120\uACE0\uBC1B\uB294\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D\uC5D0\uC11C \uBA85\uC608\uD6FC\uC190\uC8C4\uB294
+      \uC0AC\uC2E4\uC744 \uB9D0\uD574\uB3C4 \uC131\uB9BD\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D \uD615\uBC95\uC5D0\uC11C \uBBF8\uC131\uB144\uC790\uB294
+      \uB9CC 14\uC138 \uBBF8\uB9CC\uC774\uBA74 \uD615\uC0AC\uCC98\uBC8C\uC744 \uBC1B\uC9C0
+      \uC54A\uB294\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D\uC5D0\uC11C\uB294 \uD615\uBC95\uC0C1 \uC0AC\uD615\uC81C\uB3C4\uAC00
+      \uC874\uC7AC\uD558\uC9C0\uB9CC, \uCD5C\uADFC 20\uB144 \uC774\uC0C1 \uC9D1\uD589\uB41C
+      \uC801\uC774 \uC5C6\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D\uC5D0\uC11C\uB294 \uC74C\uC8FC\uC6B4\uC804\uC73C\uB85C
+      \uC0AC\uB9DD \uC0AC\uACE0\uB97C \uB0B4\uBA74 \uBB34\uC870\uAC74 \uBB34\uAE30\uC9D5\uC5ED\uC5D0
+      \uCC98\uD574\uC9C4\uB2E4."
+    isCorrect: 0
+    level: 5
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D\uC5D0\uC11C \uD6A1\uB839\uC8C4\uB294 \uD0C0\uC778\uC758
+      \uC7AC\uBB3C\uC744 \uBCF4\uAD00\uD558\uB294 \uC0AC\uB78C\uC774 \uAC1C\uC778\uC801\uC73C\uB85C
+      \uC0AC\uC6A9\uD588\uC744 \uB54C \uC131\uB9BD\uD55C\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D \uD615\uBC95\uC0C1 \uC0B4\uC778\uC8C4\uC758 \uACF5\uC18C\uC2DC\uD6A8\uB294
+      25\uB144\uC774\uB2E4."
+    isCorrect: 0
+    level: 8
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D\uC5D0\uC11C\uB294 \uBD88\uBC95 \uCD2C\uC601\uBB3C\uC744
+      \uC18C\uC9C0\uB9CC \uD574\uB3C4 \uCC98\uBC8C\uBC1B\uC744 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D\uC5D0\uC11C \uACBD\uCC30\uC774 \uC601\uC7A5 \uC5C6\uC774
+      \uAC1C\uC778\uC758 \uD734\uB300\uC804\uD654\uB97C \uC555\uC218\uD560 \uC218
+      \uC788\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D\uC5D0\uC11C \uB9C8\uC57D \uBC94\uC8C4\uB294 \uCD08\uBC94\uC774\uB77C\uB3C4
+      \uBC18\uB4DC\uC2DC \uC2E4\uD615\uC774 \uC120\uACE0\uB41C\uB2E4."
+    isCorrect: 0
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D\uC5D0\uC11C\uB294 \uD0C0\uC778\uC758 \uC8FC\uBBFC\uB4F1\uB85D\uBC88\uD638\uB97C
+      \uBD80\uC815 \uC0AC\uC6A9\uD558\uBA74 \uCC98\uBC8C\uBC1B\uC744 \uC218 \uC788\uB2E4."
+    isCorrect: 1
+    level: 4
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D\uC5D0\uC11C \uC0AC\uAE30\uC8C4\uB294 \uD53C\uD574
+      \uAE08\uC561\uC774 500\uB9CC \uC6D0 \uC774\uC0C1\uC774\uBA74 \uC790\uB3D9\uC73C\uB85C
+      \uACE0\uC18C \uC5C6\uC774\uB3C4 \uC218\uC0AC\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 0
+    level: 7
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D\uC5D0\uC11C\uB294 \uBA85\uD655\uD55C \uB3D9\uC758
+      \uC5C6\uC774 \uD0C0\uC778\uC758 \uACC4\uC88C\uB85C \uC1A1\uAE08\uB41C \uB3C8\uC744
+      \uC778\uCD9C\uD558\uBA74 \uD6A1\uB839\uC8C4\uAC00 \uC131\uB9BD\uD560 \uC218
+      \uC788\uB2E4."
+    isCorrect: 1
+    level: 6
+  - topic: "\uBC95\uB960"
+    questionText: "\uD55C\uAD6D\uC5D0\uC11C\uB294 \uC7AC\uD310 \uC5C6\uC774 \uACBD\uCC30\uC774
+      \uD53C\uC758\uC790\uB97C \uAD6C\uC18D\uD560 \uC218 \uC788\uB2E4."
+    isCorrect: 0
+    level: 5
+--- !u!1 &363990372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 363990373}
+  - component: {fileID: 363990377}
+  - component: {fileID: 363990376}
+  - component: {fileID: 363990375}
+  - component: {fileID: 363990374}
+  m_Layer: 5
+  m_Name: EEGManager_B
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &363990373
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363990372}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 922428787}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 5000, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &363990374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363990372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8eb469fbd3c1d44ba027eaefc63f809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatValues: []
+  EEGData: {fileID: 39890069}
+  maxPoints: 400
+  xSpacing: 10
+  graphHeight: 500
+  yMaxValue: 1000
+  pointPrefab: {fileID: 6431750992491110942, guid: e94a0e572aff95d479bec44cd5243e23, type: 3}
+  textPrefab: {fileID: 2520981043811666934, guid: fa3b60b04a39c0f4b837f91c75020268, type: 3}
+  pointContainer: {fileID: 1554204572}
+  interval: 0.5
+  startOffset: {x: -2450, y: -500}
+--- !u!120 &363990375
+LineRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363990372}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 97ffe82cc9743d6419747a4822fa0cf4, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 0, g: 0, b: 1, a: 1}
+      key1: {r: 0, g: 0, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_ColorSpace: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 5
+    numCapVertices: 5
+    alignment: 0
+    textureMode: 0
+    textureScale: {x: 1, y: 1}
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MaskInteraction: 0
+  m_UseWorldSpace: 0
+  m_Loop: 0
+  m_ApplyActiveColorSpace: 1
+--- !u!114 &363990376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363990372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &363990377
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363990372}
+  m_CullTransparentMesh: 1
+--- !u!1 &571269123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 571269124}
+  - component: {fileID: 571269126}
+  - component: {fileID: 571269125}
+  m_Layer: 5
+  m_Name: Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &571269124
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571269123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 892078798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 725, y: 450}
+  m_SizeDelta: {x: 400, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &571269125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571269123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC810\uC218 : 0"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 08d66180235d0174ca1520d0e101d773, type: 2}
+  m_sharedMaterial: {fileID: 8052123583782589372, guid: 08d66180235d0174ca1520d0e101d773, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 72
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &571269126
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571269123}
+  m_CullTransparentMesh: 1
+--- !u!1 &584308567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 584308568}
+  - component: {fileID: 584308570}
+  - component: {fileID: 584308569}
+  - component: {fileID: 584308571}
+  m_Layer: 5
+  m_Name: O_Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &584308568
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584308567}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 162017751}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -500, y: -250}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &584308569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584308567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -853910829, guid: dce2ba22d8a1f594cad093823e3d0c4e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &584308570
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584308567}
+  m_CullTransparentMesh: 1
+--- !u!114 &584308571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584308567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 584308569}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &678622328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 678622330}
+  - component: {fileID: 678622329}
+  m_Layer: 0
+  m_Name: OX Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &678622329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678622328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6e430d7676a6e34aa523d3caad5d046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionData: {fileID: 186229938}
+  EEGManager1: {fileID: 1341026427}
+  EEGManager2: {fileID: 363990372}
+  EEGManager3: {fileID: 1307431152}
+  EEGManager4: {fileID: 135827785}
+  questionText: {fileID: 1929821054}
+  scoreText: {fileID: 571269125}
+  topicText: {fileID: 748672325}
+  levelText: {fileID: 1550768944}
+  oButton: {fileID: 584308571}
+  xButton: {fileID: 1623787207}
+  currAns: 1
+--- !u!4 &678622330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678622328}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 475, y: 267.125, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &722393208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 722393209}
+  m_Layer: 5
+  m_Name: Theta_Graph
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &722393209
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722393208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 135827786}
+  - {fileID: 1619761570}
+  m_Father: {fileID: 1294229146}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4000, y: -2000}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &734260234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 734260235}
+  m_Layer: 5
+  m_Name: Alpha_Graph
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &734260235
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734260234}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1341026428}
+  - {fileID: 69343165}
+  m_Father: {fileID: 1294229146}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4000, y: 4000}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &748672323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 748672324}
+  - component: {fileID: 748672326}
+  - component: {fileID: 748672325}
+  m_Layer: 5
+  m_Name: Topic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &748672324
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748672323}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 892078798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -700, y: 400}
+  m_SizeDelta: {x: 400, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &748672325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748672323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uACFC\uD559"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7a1bb5f9727923847bbb3f722dff6dcc, type: 2}
+  m_sharedMaterial: {fileID: 1441438086763450729, guid: 7a1bb5f9727923847bbb3f722dff6dcc, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 72
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &748672326
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748672323}
+  m_CullTransparentMesh: 1
+--- !u!1 &892078797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892078798}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &892078798
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892078797}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1929821053}
+  - {fileID: 571269124}
+  - {fileID: 1901434917}
+  - {fileID: 748672324}
+  - {fileID: 1730006112}
+  - {fileID: 1550768942}
+  m_Father: {fileID: 1294229146}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &922428786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 922428787}
+  m_Layer: 5
+  m_Name: Beta_Graph
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &922428787
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922428786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 363990373}
+  - {fileID: 1554204572}
+  m_Father: {fileID: 1294229146}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4000, y: 2000}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &936231376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 936231378}
+  - component: {fileID: 936231377}
+  - component: {fileID: 936231379}
+  m_Layer: 5
+  m_Name: Gamma
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &936231377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936231376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ea6d6ddac4d934f82bc84065209c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StreamName: signal05
+  StreamType: 
+  EEGpow: 0
+--- !u!224 &936231378
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936231376}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2960, y: 540}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &936231379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936231376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a27e941dd6ad147bcf340a0c3daecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storedData: []
+  OX: {fileID: 678622328}
+  interval: 0.75
+--- !u!1 &1294229142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1294229146}
+  - component: {fileID: 1294229145}
+  - component: {fileID: 1294229144}
+  - component: {fileID: 1294229143}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1294229143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294229142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1294229144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294229142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1294229145
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294229142}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1294229146
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294229142}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1696330401}
+  - {fileID: 892078798}
+  - {fileID: 162017751}
+  - {fileID: 734260235}
+  - {fileID: 922428787}
+  - {fileID: 20157150}
+  - {fileID: 722393209}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!1 &1307431152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1307431153}
+  - component: {fileID: 1307431157}
+  - component: {fileID: 1307431156}
+  - component: {fileID: 1307431155}
+  - component: {fileID: 1307431154}
+  m_Layer: 5
+  m_Name: EEGManager_G
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1307431153
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307431152}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 20157150}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 5000, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1307431154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307431152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8eb469fbd3c1d44ba027eaefc63f809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatValues: []
+  EEGData: {fileID: 936231376}
+  maxPoints: 400
+  xSpacing: 10
+  graphHeight: 500
+  yMaxValue: 1000
+  pointPrefab: {fileID: 6431750992491110942, guid: e94a0e572aff95d479bec44cd5243e23, type: 3}
+  textPrefab: {fileID: 2520981043811666934, guid: fa3b60b04a39c0f4b837f91c75020268, type: 3}
+  pointContainer: {fileID: 1905723891}
+  interval: 0.5
+  startOffset: {x: -2450, y: -500}
+--- !u!120 &1307431155
+LineRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307431152}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 24fb0787a8e41c047827a6c67f3b537b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 0, a: 1}
+      key1: {r: 1, g: 1, b: 0, a: 1}
+      key2: {r: 1, g: 1, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 1002
+      ctime2: 65535
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_ColorSpace: 0
+      m_NumColorKeys: 3
+      m_NumAlphaKeys: 2
+    numCornerVertices: 5
+    numCapVertices: 5
+    alignment: 0
+    textureMode: 0
+    textureScale: {x: 1, y: 1}
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MaskInteraction: 0
+  m_UseWorldSpace: 0
+  m_Loop: 0
+  m_ApplyActiveColorSpace: 1
+--- !u!114 &1307431156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307431152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1307431157
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307431152}
+  m_CullTransparentMesh: 1
+--- !u!1 &1341026427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1341026428}
+  - component: {fileID: 1341026430}
+  - component: {fileID: 1341026429}
+  - component: {fileID: 1341026431}
+  - component: {fileID: 1341026432}
+  m_Layer: 5
+  m_Name: EEGManager_A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1341026428
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341026427}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 734260235}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 5000, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1341026429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341026427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1341026430
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341026427}
+  m_CullTransparentMesh: 1
+--- !u!120 &1341026431
+LineRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341026427}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7a86f3a9dd1251d48875822c3553e64d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 1, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_ColorSpace: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 5
+    numCapVertices: 5
+    alignment: 0
+    textureMode: 0
+    textureScale: {x: 1, y: 1}
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MaskInteraction: 0
+  m_UseWorldSpace: 0
+  m_Loop: 0
+  m_ApplyActiveColorSpace: 1
+--- !u!114 &1341026432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341026427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8eb469fbd3c1d44ba027eaefc63f809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatValues: []
+  EEGData: {fileID: 2105291953}
+  maxPoints: 400
+  xSpacing: 10
+  graphHeight: 500
+  yMaxValue: 1000
+  pointPrefab: {fileID: 6431750992491110942, guid: e94a0e572aff95d479bec44cd5243e23, type: 3}
+  textPrefab: {fileID: 2520981043811666934, guid: fa3b60b04a39c0f4b837f91c75020268, type: 3}
+  pointContainer: {fileID: 69343165}
+  interval: 0.5
+  startOffset: {x: -2450, y: -500}
+--- !u!1 &1468319839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1468319842}
+  - component: {fileID: 1468319841}
+  - component: {fileID: 1468319840}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1468319840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468319839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
+--- !u!114 &1468319841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468319839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1468319842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468319839}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1550768941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1550768942}
+  - component: {fileID: 1550768943}
+  - component: {fileID: 1550768944}
+  m_Layer: 5
+  m_Name: Level
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1550768942
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550768941}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 892078798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 420}
+  m_SizeDelta: {x: 400, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1550768943
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550768941}
+  m_CullTransparentMesh: 1
+--- !u!114 &1550768944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550768941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 0
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7a1bb5f9727923847bbb3f722dff6dcc, type: 2}
+  m_sharedMaterial: {fileID: 1441438086763450729, guid: 7a1bb5f9727923847bbb3f722dff6dcc, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 72
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1554204571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1554204572}
+  m_Layer: 5
+  m_Name: PointContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1554204572
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554204571}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 922428787}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 5000, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1619761569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1619761570}
+  m_Layer: 5
+  m_Name: PointContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1619761570
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619761569}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 722393209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 5000, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1623787203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1623787204}
+  - component: {fileID: 1623787206}
+  - component: {fileID: 1623787205}
+  - component: {fileID: 1623787207}
+  m_Layer: 5
+  m_Name: X_Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1623787204
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623787203}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 162017751}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 500, y: -250}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1623787205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623787203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 477411066, guid: dce2ba22d8a1f594cad093823e3d0c4e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1623787206
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623787203}
+  m_CullTransparentMesh: 1
+--- !u!114 &1623787207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623787203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1623787205}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &1696330400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1696330401}
+  - component: {fileID: 1696330403}
+  - component: {fileID: 1696330402}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1696330401
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696330400}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1294229146}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1696330402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696330400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1696330403
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696330400}
+  m_CullTransparentMesh: 1
+--- !u!1 &1730006111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1730006112}
+  - component: {fileID: 1730006114}
+  - component: {fileID: 1730006113}
+  m_Layer: 5
+  m_Name: Level_
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1730006112
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730006111}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 892078798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -150, y: 480}
+  m_SizeDelta: {x: 202.7061, y: 91.2477}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1730006113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730006111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uB09C\uC774\uB3C4 :"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 08d66180235d0174ca1520d0e101d773, type: 2}
+  m_sharedMaterial: {fileID: 8052123583782589372, guid: 08d66180235d0174ca1520d0e101d773, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 40
+  m_fontSizeBase: 40
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1730006114
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730006111}
+  m_CullTransparentMesh: 1
+--- !u!1 &1785693597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1785693599}
+  - component: {fileID: 1785693598}
+  - component: {fileID: 1785693600}
+  m_Layer: 5
+  m_Name: Theta
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1785693598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785693597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ea6d6ddac4d934f82bc84065209c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StreamName: signal02
+  StreamType: 
+  EEGpow: 0
+--- !u!224 &1785693599
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785693597}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2960, y: 540}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1785693600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785693597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a27e941dd6ad147bcf340a0c3daecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storedData: []
+  OX: {fileID: 678622328}
+  interval: 0.75
+--- !u!1 &1901434916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1901434917}
+  - component: {fileID: 1901434919}
+  - component: {fileID: 1901434918}
+  m_Layer: 5
+  m_Name: Topic_
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1901434917
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901434916}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 892078798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -817, y: 480}
+  m_SizeDelta: {x: 202.7061, y: 91.2477}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1901434918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901434916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC8FC\uC81C :"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 08d66180235d0174ca1520d0e101d773, type: 2}
+  m_sharedMaterial: {fileID: 8052123583782589372, guid: 08d66180235d0174ca1520d0e101d773, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 40
+  m_fontSizeBase: 40
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1901434919
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901434916}
+  m_CullTransparentMesh: 1
+--- !u!1 &1905723890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1905723891}
+  m_Layer: 5
+  m_Name: PointContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1905723891
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905723890}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 20157150}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 5000, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1929821052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1929821053}
+  - component: {fileID: 1929821055}
+  - component: {fileID: 1929821054}
+  m_Layer: 5
+  m_Name: Question
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1929821053
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929821052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 892078798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 225}
+  m_SizeDelta: {x: 1800, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1929821054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929821052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 7a1bb5f9727923847bbb3f722dff6dcc, type: 2}
+  m_sharedMaterial: {fileID: 1441438086763450729, guid: 7a1bb5f9727923847bbb3f722dff6dcc, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 72
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1929821055
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929821052}
+  m_CullTransparentMesh: 1
+--- !u!1 &1969065635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1969065638}
+  - component: {fileID: 1969065637}
+  - component: {fileID: 1969065636}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1969065636
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969065635}
+  m_Enabled: 1
+--- !u!20 &1969065637
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969065635}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1969065638
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969065635}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2105291953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2105291955}
+  - component: {fileID: 2105291954}
+  - component: {fileID: 2105291956}
+  m_Layer: 5
+  m_Name: Alpha
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2105291954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105291953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ea6d6ddac4d934f82bc84065209c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StreamName: signal03
+  StreamType: 
+  EEGpow: 0
+--- !u!224 &2105291955
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105291953}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2960, y: 540}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2105291956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105291953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a27e941dd6ad147bcf340a0c3daecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storedData: []
+  OX: {fileID: 678622328}
+  interval: 0.75
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 1969065638}
+  - {fileID: 1294229146}
+  - {fileID: 1468319842}
+  - {fileID: 678622330}
+  - {fileID: 186229937}
+  - {fileID: 2105291955}
+  - {fileID: 39890071}
+  - {fileID: 936231378}
+  - {fileID: 1785693599}
