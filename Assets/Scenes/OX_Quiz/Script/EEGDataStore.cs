@@ -22,7 +22,6 @@ public class EEGDataStore : MonoBehaviour
     private float timer = 0f;
     public float interval = 0.75f;
 
-    // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
@@ -31,15 +30,15 @@ public class EEGDataStore : MonoBehaviour
         {
             timer = 0f; // 타이머 초기화
 
-            // 매 프레임마다 새로운 EEG_Store 생성
+            // interval에서 설정한 시간마다 새로운 EEG_Store 생성
             EEG_Store newEntry = new EEG_Store()
             {
                 eegType = gameObject.name,
-                eegPower = gameObject.GetComponent<InletOutlet2>().EEGpow, // 랜덤 EEG 파워
-                topic = OX.GetComponent<OXManager>().topicText.text,
+                eegPower = gameObject.GetComponent<InletOutlet2>().EEGpow,  // 뇌파 타입은 InletOutlet2 코드에서 설정
+                topic = OX.GetComponent<OXManager>().topicText.text,        // OXManager에서 기타 정보 추출
                 questionText = OX.GetComponent<OXManager>().questionText.text,
                 currCorrected = OX.GetComponent<OXManager>().currAns,
-                level = OX.GetComponent<OXManager>().levelText.text // 1 ~ 10 레벨 랜덤
+                level = OX.GetComponent<OXManager>().levelText.text
             };
 
             storedData.Add(newEntry);
