@@ -83,28 +83,18 @@ public class EEGReceiver : MonoBehaviourPun
 
     private void SendEEGDataToServer()
     {
-        if (photonView == null)
+        if (!PhotonNetwork.InRoom)
         {
-            Debug.LogWarning("photonView가 할당되지 않았습니다.");
+            Debug.LogWarning("아직 방에 입장하지 않았습니다. RPC 호출을 중단합니다.");
             return;
         }
 
-        if (!photonView.IsMine)
-        {
-            // 내 photonView가 아니면 전송하지 않음
-            return;
-        }
-
-        try
+        if (photonView.IsMine)
         {
             photonView.RPC("ReceiveEEGData", RpcTarget.MasterClient,
                 attention, meditation, blink,
                 delta, theta, lowAlpha, highAlpha,
                 lowBeta, highBeta, lowGamma, highGamma);
-        }
-        catch (Exception ex)
-        {
-            Debug.LogError("EEG 데이터 전송 중 오류: " + ex.Message);
         }
     }
 

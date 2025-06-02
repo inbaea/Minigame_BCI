@@ -52,19 +52,18 @@ public class RoomManager : MonoBehaviourPunCallbacks
             return;
         }
 
-        // 서버(마스터 클라이언트)가 방에 있는 모든 클라이언트들을 위해 EEG 프리팹을 Instantiate
-        GameObject eegObj = Instantiate(eegDisplayPrefab, Vector3.zero, Quaternion.identity);
+        // PhotonNetwork.Instantiate는 네트워크 상에 오브젝트를 생성하고 PhotonView에 ViewID를 자동 부여함
+        GameObject eegObj = PhotonNetwork.Instantiate(eegDisplayPrefab.name, Vector3.zero, Quaternion.identity);
         Debug.Log($"클라이언트 EEG 표시용 프리팹 생성 - 플레이어 ActorNumber: {newPlayer.ActorNumber}");
 
         PhotonView pv = eegObj.GetComponent<PhotonView>();
         if (pv == null)
         {
             Debug.LogError("eegDisplayPrefab에 PhotonView가 없습니다!");
-            Destroy(eegObj);
+            PhotonNetwork.Destroy(eegObj);
             return;
         }
 
-        // 생성된 EEG 프리팹의 ViewID를 플레이어 ActorNumber와 매핑
         playerToEEGViewID[newPlayer.ActorNumber] = pv.ViewID;
     }
 
