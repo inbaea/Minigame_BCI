@@ -1,18 +1,14 @@
+using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
 public class RoomManager : MonoBehaviourPunCallbacks
 {
-    public GameObject eegDisplayPrefab;
+    public GameObject eegDisplayPrefab; // EEG 데이터를 보여줄 서버측 프리팹
 
-    void Start()
-    {
-        if (PhotonNetwork.IsConnected == false)
-        {
-            PhotonNetwork.ConnectUsingSettings();
-        }
-    }
+    // 플레이어 ActorNumber -> EEG 프리팹 PhotonView.ViewID 매핑
+    private Dictionary<int, int> playerToEEGViewID = new Dictionary<int, int>();
 
     public override void OnConnectedToMaster()
     {
@@ -39,16 +35,57 @@ public class RoomManager : MonoBehaviourPunCallbacks
         }
     }
 
-    void SpawnClientPrefab(Photon.Realtime.Player player)
+    private void SpawnClientPrefab(Photon.Realtime.Player newPlayer)
     {
-        if (eegDisplayPrefab != null)
+        if (eegDisplayPrefab == null)
         {
-            Instantiate(eegDisplayPrefab, Vector3.zero, Quaternion.identity);
-            Debug.Log("클라이언트 EEG 표시용 프리팹 생성");
+            Debug.LogError("eegDisplayPrefab이 할당되지 않았습니다!");
+            return;
+        }
+
+        // 서버(마스터 클라이언트)가 방에 있는 모든 클라이언트들을 위해 EEG 프리팹을 Instantiate
+        GameObject eegObj = Instantiate(eegDisplayPrefab, Vector3.zero, Quaternion.identity);
+        Debug.Log($"클라이언트 EEG 표시용 프리팹 생성 - 플레이어 ActorNumber: {newPlayer.ActorNumber}");
+
+        PhotonView pv = eegObj.GetComponent<PhotonView>();
+        if (pv == null)
+        {
+            Debug.LogError("eegDisplayPrefab에 PhotonView가 없습니다!");
+            Destroy(eegObj);
+            return;
+        }
+
+        // 생성된 EEG 프리팹의 ViewID를 플레이어 ActorNumber와 매핑
+        playerToEEGViewID[newPlayer.ActorNumber] = pv.ViewID;
+    }
+
+    // 클라이언트가 보낸 ViewID를 통해 해당 EEGDataReceiver에게 데이터 전달하기 위한 헬퍼 메서드 예시
+    public void ForwardEEGData(int senderActorNumber, int viewID,
+        int attention, int meditation, int blink,
+        int delta, int theta, int lowAlpha, int highAlpha,
+        int lowBeta, int highBeta, int lowGamma, int highGamma)
+    {
+        if (playerToEEGViewID.TryGetValue(senderActorNumber, out int mappedViewID))
+        {
+            if (mappedViewID == viewID)
+            {
+                PhotonView pv = PhotonView.Find(viewID);
+                if (pv != null)
+                {
+                    pv.RPC("ReceiveEEGData", RpcTarget.All,
+                        attention, meditation, blink,
+                        delta, theta, lowAlpha, highAlpha,
+                        lowBeta, highBeta, lowGamma, highGamma);
+                }
+            }
+            else
+            {
+                Debug.LogWarning($"ViewID 불일치 - 플레이어: {senderActorNumber}, 받은 ViewID: {viewID}, 매핑된 ViewID: {mappedViewID}");
+            }
         }
         else
         {
-            Debug.LogError("eegDisplayPrefab이 할당되지 않았습니다!");
+            Debug.LogWarning($"플레이어 ActorNumber {senderActorNumber} 에 대한 ViewID 매핑이 없습니다.");
         }
     }
 }

@@ -13,7 +13,6 @@ public class EEGDataReceiver : MonoBehaviourPun
         int delta, int theta, int lowAlpha, int highAlpha,
         int lowBeta, int highBeta, int lowGamma, int highGamma)
     {
-        // 데이터 갱신
         this.attention = attention;
         this.meditation = meditation;
         this.blink = blink;
@@ -26,6 +25,6 @@ public class EEGDataReceiver : MonoBehaviourPun
         this.lowGamma = lowGamma;
         this.highGamma = highGamma;
 
-        Debug.Log($"서버에서 EEG 데이터 수신: attention={attention}, meditation={meditation}");
+        Debug.Log($"[서버 EEG] attention={attention}, meditation={meditation}");
     }
 }

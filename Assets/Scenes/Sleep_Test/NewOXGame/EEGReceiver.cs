@@ -12,23 +12,18 @@ public class EEGReceiver : MonoBehaviourPun
     NetworkStream stream;
     StreamReader reader;
 
-    public int attention;
-    public int meditation;
-    public int blink;
+    public int attention, meditation, blink;
     public int delta, theta, lowAlpha, highAlpha;
     public int lowBeta, highBeta, lowGamma, highGamma;
 
-    private float sendInterval = 0.1f; // 0.1초마다 서버로 전송
+    private float sendInterval = 0.1f;
     private float timeSinceLastSend = 0f;
 
-    void Start()
-    {
-        StartCoroutine(ConnectToEEGServerAfterDelay(2f)); // 2초 후 연결 시도
-    }
+    private bool isConnected = false;
 
-    IEnumerator ConnectToEEGServerAfterDelay(float delay)
+    IEnumerator ConnectWithDelay()
     {
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(2f);
 
         try
         {
@@ -36,6 +31,7 @@ public class EEGReceiver : MonoBehaviourPun
             stream = client.GetStream();
             reader = new StreamReader(stream, Encoding.UTF8);
             Debug.Log("파이썬 EEG 서버에 연결됨");
+            isConnected = true;
         }
         catch (Exception ex)
         {
@@ -43,9 +39,15 @@ public class EEGReceiver : MonoBehaviourPun
         }
     }
 
+    void Start()
+    {
+        StartCoroutine(ConnectWithDelay());
+    }
+
     void Update()
     {
-        // TCP로부터 데이터 수신
+        if (!isConnected) return;
+
         if (client != null && stream != null && stream.DataAvailable)
         {
             string line = reader.ReadLine();
@@ -74,7 +76,6 @@ public class EEGReceiver : MonoBehaviourPun
             }
         }
 
-        // 일정 주기마다 PUN RPC로 서버(마스터클라이언트)에 EEG 데이터 전송
         timeSinceLastSend += Time.deltaTime;
         if (timeSinceLastSend >= sendInterval)
         {
@@ -85,9 +86,11 @@ public class EEGReceiver : MonoBehaviourPun
 
     private void SendEEGDataToServer()
     {
-        if (photonView != null && photonView.IsMine)
+        if (photonView.IsMine && PhotonNetwork.IsConnected && PhotonNetwork.InRoom)
         {
-            photonView.RPC("ReceiveEEGData", RpcTarget.MasterClient,
+            // 자신의 photonView.ViewID를 서버에 전달해서 서버가 정확한 프리팹에 전달할 수 있게 한다.
+            photonView.RPC("RelayEEGData", RpcTarget.MasterClient,
+                photonView.ViewID,
                 attention, meditation, blink,
                 delta, theta, lowAlpha, highAlpha,
                 lowBeta, highBeta, lowGamma, highGamma);
