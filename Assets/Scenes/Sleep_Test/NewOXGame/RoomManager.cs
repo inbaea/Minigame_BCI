@@ -55,6 +55,19 @@ public class RoomManager : MonoBehaviourPunCallbacks
         GameObject eegObj = PhotonNetwork.Instantiate(eegDisplayPrefab.name, Vector3.zero, Quaternion.identity);
         Debug.Log($"서버 EEG 표시용 프리팹 생성됨: 플레이어 ActorNumber={newPlayer.ActorNumber}");
 
+        // 생성된 프리팹의 PhotonView 컴포넌트 가져오기
+        PhotonView pv = eegObj.GetComponent<PhotonView>();
+        if (pv != null)
+        {
+            // 소유권을 해당 플레이어에게 이전
+            pv.TransferOwnership(newPlayer.ActorNumber);
+            Debug.Log($"프리팹 PhotonView 소유권을 플레이어 {newPlayer.ActorNumber}에게 이전했습니다.");
+        }
+        else
+        {
+            Debug.LogWarning("생성된 EEG 프리팹에 PhotonView 컴포넌트가 없습니다.");
+        }
+
         playerEEGObjects[newPlayer.ActorNumber] = eegObj;
     }
 
