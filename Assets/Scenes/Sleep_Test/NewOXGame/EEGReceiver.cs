@@ -43,7 +43,6 @@ public class EEGReceiver : MonoBehaviourPun
 
     void Update()
     {
-        // TCP로부터 데이터 수신
         if (client != null && stream != null && stream.DataAvailable)
         {
             string line = reader.ReadLine();
@@ -72,7 +71,6 @@ public class EEGReceiver : MonoBehaviourPun
             }
         }
 
-        // 일정 주기마다 PUN RPC로 서버(마스터클라이언트)에 EEG 데이터 전송
         timeSinceLastSend += Time.deltaTime;
         if (timeSinceLastSend >= sendInterval)
         {
@@ -85,13 +83,14 @@ public class EEGReceiver : MonoBehaviourPun
     {
         if (!PhotonNetwork.InRoom)
         {
-            Debug.LogWarning("아직 방에 입장하지 않았습니다. RPC 호출을 중단합니다.");
+            Debug.LogWarning("아직 방에 입장하지 않았습니다. RPC 호출 중단");
             return;
         }
 
         if (photonView.IsMine)
         {
-            photonView.RPC("ReceiveEEGData", RpcTarget.MasterClient,
+            // RoomManager 쪽에 있는 RPC 함수 이름과 동일하게 맞춤
+            photonView.RPC("ReceiveEEGDataFromClient", RpcTarget.MasterClient,
                 attention, meditation, blink,
                 delta, theta, lowAlpha, highAlpha,
                 lowBeta, highBeta, lowGamma, highGamma);
