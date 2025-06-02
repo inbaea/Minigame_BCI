@@ -24,6 +24,11 @@ public class EEGReceiver : MonoBehaviourPun
     {
         // 2초 지연 후 연결 시도
         Invoke(nameof(ConnectToEEGServer), 2f);
+
+        if (PhotonNetwork.InRoom && photonView.IsMine)
+        {
+            photonView.RPC("RegisterClientViewID", RpcTarget.MasterClient, PhotonNetwork.LocalPlayer.ActorNumber, photonView.ViewID);
+        }
     }
 
     void ConnectToEEGServer()
