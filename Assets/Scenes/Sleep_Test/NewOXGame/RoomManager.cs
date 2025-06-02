@@ -30,7 +30,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
         Debug.LogError($"방 생성 실패: {message}");
     }
 
-    public void OnPlayerEnteredRoom(Player newPlayer)
+    public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
     {
         if (PhotonNetwork.IsMasterClient)
         {
@@ -39,12 +39,11 @@ public class RoomManager : MonoBehaviourPunCallbacks
         }
     }
 
-
-    void SpawnClientPrefab(Player player)
+    void SpawnClientPrefab(Photon.Realtime.Player player)
     {
         if (eegDisplayPrefab != null)
         {
-            GameObject obj = Instantiate(eegDisplayPrefab, Vector3.zero, Quaternion.identity);
+            Instantiate(eegDisplayPrefab, Vector3.zero, Quaternion.identity);
             Debug.Log("클라이언트 EEG 표시용 프리팹 생성");
         }
         else
