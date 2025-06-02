@@ -10,6 +10,15 @@ public class RoomManager : MonoBehaviourPunCallbacks
     // 플레이어 ActorNumber -> EEG 프리팹 PhotonView.ViewID 매핑
     private Dictionary<int, int> playerToEEGViewID = new Dictionary<int, int>();
 
+    void Start()
+    {
+        if (!PhotonNetwork.IsConnected)
+        {
+            Debug.Log("포톤 네트워크 연결 시도");
+            PhotonNetwork.ConnectUsingSettings();
+        }
+    }
+
     public override void OnConnectedToMaster()
     {
         Debug.Log("포톤 마스터 서버에 연결됨, 방 생성 시도...");
