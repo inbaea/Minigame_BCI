@@ -203,7 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 943681931}
-  - component: {fileID: 943681930}
+  - component: {fileID: 943681932}
   m_Layer: 0
   m_Name: Client
   m_TagString: Untagged
@@ -211,19 +211,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &943681930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 943681929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e86f84eace3c77a49bc7462181572fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Gamma_A: {fileID: 1884669738}
 --- !u!4 &943681931
 Transform:
   m_ObjectHideFlags: 0
@@ -239,6 +226,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &943681932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943681929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac47da2b6e20c44ca605613f52358d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EEGManager_Gamma: {fileID: 0}
+  EEGManager_Beta: {fileID: 0}
+  EEGManager_Alpha: {fileID: 0}
+  EEGManager_Theta: {fileID: 0}
+  EEGReceiver: {fileID: 0}
 --- !u!1 &1246901810
 GameObject:
   m_ObjectHideFlags: 0

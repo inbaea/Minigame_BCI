@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using static QuestionData;
 
@@ -12,12 +11,13 @@ public class ClientDataStore : MonoBehaviour
         public float eegPower;
         public string topic;
         public string questionText;
-        public bool currCorrected; // 문제를 맞추면 O, 틀렸다면 X.
-        public string level; // 1 ~ 10
+        public bool currCorrected;
+        public string level;
     }
-    public List<EEG_Store> storedData = new List<EEG_Store>();
 
+    public List<EEG_Store> storedData = new List<EEG_Store>();
     public GameObject OX;
+    public GameObject receiver;
 
     private float timer = 0f;
     public float interval = 0.75f;
@@ -28,14 +28,45 @@ public class ClientDataStore : MonoBehaviour
 
         if (timer >= interval)
         {
-            timer = 0f; // 타이머 초기화
+            timer = 0f;
+            float selectedEEGPower = 0f;
 
-            // interval에서 설정한 시간마다 새로운 EEG_Store 생성
+            switch (gameObject.name)
+            {
+                case "delta":
+                    selectedEEGPower = receiver.GetComponent<EEGData>().delta;
+                    break;
+                case "theta":
+                    selectedEEGPower = receiver.GetComponent<EEGData>().theta;
+                    break;
+                case "lowAlpha":
+                    selectedEEGPower = receiver.GetComponent<EEGData>().lowAlpha;
+                    break;
+                case "highAlpha":
+                    selectedEEGPower = receiver.GetComponent<EEGData>().highAlpha;
+                    break;
+                case "lowBeta":
+                    selectedEEGPower = receiver.GetComponent<EEGData>().lowBeta;
+                    break;
+                case "highBeta":
+                    selectedEEGPower = receiver.GetComponent<EEGData>().highBeta;
+                    break;
+                case "lowGamma":
+                    selectedEEGPower = receiver.GetComponent<EEGData>().lowGamma;
+                    break;
+                case "highGamma":
+                    selectedEEGPower = receiver.GetComponent<EEGData>().highGamma;
+                    break;
+                default:
+                    Debug.LogWarning($"알 수 없는 eegType: {gameObject.name}");
+                    break;
+            }
+
             EEG_Store newEntry = new EEG_Store()
             {
                 eegType = gameObject.name,
-                eegPower = gameObject.GetComponent<InletOutlet2>().EEGpow,  // 뇌파 타입은 InletOutlet2 코드에서 설정
-                topic = OX.GetComponent<ClientOX>().topicText.text,        // OXManager에서 기타 정보 추출
+                eegPower = selectedEEGPower,
+                topic = OX.GetComponent<ClientOX>().topicText.text,
                 questionText = OX.GetComponent<ClientOX>().questionText.text,
                 currCorrected = OX.GetComponent<ClientOX>().currAns,
                 level = OX.GetComponent<ClientOX>().levelText.text
