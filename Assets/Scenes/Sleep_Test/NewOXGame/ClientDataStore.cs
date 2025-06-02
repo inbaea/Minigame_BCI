@@ -34,28 +34,28 @@ public class ClientDataStore : MonoBehaviour
             switch (gameObject.name)
             {
                 case "delta":
-                    selectedEEGPower = receiver.GetComponent<EEGData>().delta;
+                    selectedEEGPower = receiver.GetComponent<EEGReceiver>().delta;
                     break;
                 case "theta":
-                    selectedEEGPower = receiver.GetComponent<EEGData>().theta;
+                    selectedEEGPower = receiver.GetComponent<EEGReceiver>().theta;
                     break;
                 case "lowAlpha":
-                    selectedEEGPower = receiver.GetComponent<EEGData>().lowAlpha;
+                    selectedEEGPower = receiver.GetComponent<EEGReceiver>().lowAlpha;
                     break;
                 case "highAlpha":
-                    selectedEEGPower = receiver.GetComponent<EEGData>().highAlpha;
+                    selectedEEGPower = receiver.GetComponent<EEGReceiver>().highAlpha;
                     break;
                 case "lowBeta":
-                    selectedEEGPower = receiver.GetComponent<EEGData>().lowBeta;
+                    selectedEEGPower = receiver.GetComponent<EEGReceiver>().lowBeta;
                     break;
                 case "highBeta":
-                    selectedEEGPower = receiver.GetComponent<EEGData>().highBeta;
+                    selectedEEGPower = receiver.GetComponent<EEGReceiver>().highBeta;
                     break;
                 case "lowGamma":
-                    selectedEEGPower = receiver.GetComponent<EEGData>().lowGamma;
+                    selectedEEGPower = receiver.GetComponent<EEGReceiver>().lowGamma;
                     break;
                 case "highGamma":
-                    selectedEEGPower = receiver.GetComponent<EEGData>().highGamma;
+                    selectedEEGPower = receiver.GetComponent<EEGReceiver>().highGamma;
                     break;
                 default:
                     Debug.LogWarning($"알 수 없는 eegType: {gameObject.name}");

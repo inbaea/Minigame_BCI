@@ -32,8 +32,13 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     public void OnPlayerEnteredRoom(Player newPlayer)
     {
-        SpawnClientPrefab(newPlayer);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            Debug.Log($"유저 입장 확인, 프리팹 생성");
+            SpawnClientPrefab(newPlayer);
+        }
     }
+
 
     void SpawnClientPrefab(Player player)
     {

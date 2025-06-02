@@ -4,6 +4,7 @@ using UnityEngine;
 using System.IO;
 using System;
 using Photon.Pun;
+using System.Collections;
 
 public class EEGReceiver : MonoBehaviourPun
 {
@@ -22,6 +23,13 @@ public class EEGReceiver : MonoBehaviourPun
 
     void Start()
     {
+        StartCoroutine(ConnectToEEGServerAfterDelay(2f)); // 2초 후 연결 시도
+    }
+
+    IEnumerator ConnectToEEGServerAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
         try
         {
             client = new TcpClient("127.0.0.1", 5005);
@@ -77,7 +85,7 @@ public class EEGReceiver : MonoBehaviourPun
 
     private void SendEEGDataToServer()
     {
-        if (photonView.IsMine)
+        if (photonView != null && photonView.IsMine)
         {
             photonView.RPC("ReceiveEEGData", RpcTarget.MasterClient,
                 attention, meditation, blink,
