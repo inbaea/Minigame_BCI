@@ -17,18 +17,10 @@ public class EEGReceiver : MonoBehaviourPun
     public int delta, theta, lowAlpha, highAlpha;
     public int lowBeta, highBeta, lowGamma, highGamma;
 
-    private float sendInterval = 0.1f; // 0.1초마다 서버로 전송
-    private float timeSinceLastSend = 0f;
-
     void Start()
     {
         // 2초 지연 후 연결 시도
         Invoke(nameof(ConnectToEEGServer), 2f);
-
-        if (PhotonNetwork.InRoom && photonView.IsMine)
-        {
-            photonView.RPC("RegisterClientViewID", RpcTarget.MasterClient, PhotonNetwork.LocalPlayer.ActorNumber, photonView.ViewID);
-        }
     }
 
     void ConnectToEEGServer()
@@ -74,31 +66,6 @@ public class EEGReceiver : MonoBehaviourPun
                     Debug.LogWarning("JSON 파싱 실패: " + ex.Message);
                 }
             }
-        }
-
-        timeSinceLastSend += Time.deltaTime;
-        if (timeSinceLastSend >= sendInterval)
-        {
-            SendEEGDataToServer();
-            timeSinceLastSend = 0f;
-        }
-    }
-
-    private void SendEEGDataToServer()
-    {
-        if (!PhotonNetwork.InRoom)
-        {
-            Debug.LogWarning("아직 방에 입장하지 않았습니다. RPC 호출 중단");
-            return;
-        }
-
-        if (photonView.IsMine)
-        {
-            // RoomManager 쪽에 있는 RPC 함수 이름과 동일하게 맞춤
-            photonView.RPC("ReceiveEEGDataFromClient", RpcTarget.MasterClient,
-                attention, meditation, blink,
-                delta, theta, lowAlpha, highAlpha,
-                lowBeta, highBeta, lowGamma, highGamma);
         }
     }
 
