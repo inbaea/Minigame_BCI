@@ -13,9 +13,9 @@ public class EEGProfileUI : MonoBehaviour
     {
         if (targetReceiver != null)
         {
-            attentionText.text = $"Attention: {targetReceiver.attention}";
-            meditationText.text = $"Meditation: {targetReceiver.meditation}";
-            blinkText.text = $"Blink: {targetReceiver.blink}";
+            attentionText.text = $"{targetReceiver.attention}";
+            meditationText.text = $"{targetReceiver.meditation}";
+            blinkText.text = $"{targetReceiver.blink}";
         }
     }
 }
