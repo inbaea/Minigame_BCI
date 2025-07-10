@@ -17,6 +17,9 @@ public class EEGReceiver : MonoBehaviourPun
     public int delta, theta, lowAlpha, highAlpha;
     public int lowBeta, highBeta, lowGamma, highGamma;
 
+    public GameObject EEG_Log;
+
+    private int curr_eeg;
     void Start()
     {
         // 2초 지연 후 연결 시도
@@ -64,6 +67,12 @@ public class EEGReceiver : MonoBehaviourPun
                 catch (Exception ex)
                 {
                     Debug.LogWarning("JSON 파싱 실패: " + ex.Message);
+                }
+
+                if(curr_eeg != attention)
+                {
+                    EEG_Log.GetComponent<EEGLogger>().LogEEG(attention, meditation, blink, delta, theta, lowAlpha, highAlpha, lowBeta, highBeta, lowGamma, highGamma);
+                    curr_eeg = attention;
                 }
             }
         }
