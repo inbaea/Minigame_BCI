@@ -72,6 +72,10 @@ public class EEGReceiver : MonoBehaviourPun
                 {
                     EEG_Log.GetComponent<EEGLogger>().LogEEG(attention, meditation, blink, delta, theta, lowAlpha, highAlpha, lowBeta, highBeta, lowGamma, highGamma);
                 }
+                if(blink != 0)
+                {
+                    EEG_Log.GetComponent<EEGLogger>().LogEEG(attention, meditation, blink, delta, theta, lowAlpha, highAlpha, lowBeta, highBeta, lowGamma, highGamma);
+                }
             }
         }
     }

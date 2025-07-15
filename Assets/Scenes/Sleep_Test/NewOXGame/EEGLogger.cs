@@ -25,6 +25,18 @@ public class EEGLogger : MonoBehaviour
 
         writer = new StreamWriter(fullPath, false);
         writer.WriteLine("Time,Attention,Meditation,BlinkCount,Delta,Theta,LowAlpha,HighAlpha,LowBeta,HighBeta,LowGamma,HighGamma");
+
+        // 최초 한 번만 코루틴 실행
+        if (!hasStartedShutdown)
+        {
+            hasStartedShutdown = true;
+
+            StartCoroutine(ShutdownAfterDelay(30f));
+            StartCoroutine(Delay_A(1, 10f));
+            StartCoroutine(Delay_B(1, 15f));
+            StartCoroutine(Delay_A(2, 20f));
+            StartCoroutine(Delay_B(2, 25f));
+        }
     }
 
     public void LogEEG(
@@ -52,19 +64,6 @@ public class EEGLogger : MonoBehaviour
             string line = $"{timestamp},{attention},{meditation},{blinkCount},{delta},{theta},{lowAlpha},{highAlpha},{lowBeta},{highBeta},{lowGamma},{highGamma}";
             writer.WriteLine(line);
             writer.Flush();
-        }
-        
-
-        // 최초 한 번만 코루틴 실행
-        if (!hasStartedShutdown)
-        {
-            hasStartedShutdown = true;
-
-            StartCoroutine(ShutdownAfterDelay(30f));
-            StartCoroutine(Delay_A(1, 10f));
-            StartCoroutine(Delay_B(1, 15f));
-            StartCoroutine(Delay_A(2, 20f));
-            StartCoroutine(Delay_B(2, 25f));
         }
     }
 
