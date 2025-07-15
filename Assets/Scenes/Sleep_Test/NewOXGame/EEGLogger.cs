@@ -46,11 +46,14 @@ public class EEGLogger : MonoBehaviour
             blinkCount++;
         }
 
-        // 항상 EEG 로그 기록
-        string timestamp = System.DateTime.Now.ToString("HH:mm:ss.fff");
-        string line = $"{timestamp},{attention},{meditation},{blinkCount},{delta},{theta},{lowAlpha},{highAlpha},{lowBeta},{highBeta},{lowGamma},{highGamma}";
-        writer.WriteLine(line);
-        writer.Flush();
+        else if (blinkStrength == 0)
+        {
+            string timestamp = System.DateTime.Now.ToString("HH:mm:ss.fff");
+            string line = $"{timestamp},{attention},{meditation},{blinkCount},{delta},{theta},{lowAlpha},{highAlpha},{lowBeta},{highBeta},{lowGamma},{highGamma}";
+            writer.WriteLine(line);
+            writer.Flush();
+        }
+        
 
         // 최초 한 번만 코루틴 실행
         if (!hasStartedShutdown)
