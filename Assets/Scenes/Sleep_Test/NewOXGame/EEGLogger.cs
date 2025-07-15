@@ -1,3 +1,4 @@
+using System.Collections;
 using System.IO;
 using UnityEngine;
 
@@ -12,7 +13,7 @@ public class EEGLogger : MonoBehaviour
     private string fullPath;
     private StreamWriter writer;
     private int blinkCount = 0;
-    private int logCount = 0;
+    private bool hasStartedShutdown = false;
 
     void Start()
     {
@@ -43,24 +44,47 @@ public class EEGLogger : MonoBehaviour
         if (blinkStrength > 0)
         {
             blinkCount++;
-            return;
         }
 
+        // 항상 EEG 로그 기록
         string timestamp = System.DateTime.Now.ToString("HH:mm:ss.fff");
         string line = $"{timestamp},{attention},{meditation},{blinkCount},{delta},{theta},{lowAlpha},{highAlpha},{lowBeta},{highBeta},{lowGamma},{highGamma}";
         writer.WriteLine(line);
         writer.Flush();
 
-        logCount++;
-
-        if (logCount >= 20)
+        // 최초 한 번만 코루틴 실행
+        if (!hasStartedShutdown)
         {
-            Debug.Log("로그가 20회 기록되어 에디터 실행을 중지합니다.");
+            hasStartedShutdown = true;
+
+            StartCoroutine(ShutdownAfterDelay(30f));
+            StartCoroutine(Delay_A(1, 10f));
+            StartCoroutine(Delay_B(1, 15f));
+            StartCoroutine(Delay_A(2, 20f));
+            StartCoroutine(Delay_B(2, 25f));
+        }
+    }
+
+    private IEnumerator ShutdownAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
 
 #if UNITY_EDITOR
-            EditorApplication.isPlaying = false;
+        Debug.Log("30초가 지나 에디터 실행을 중지합니다.");
+        EditorApplication.isPlaying = false;
 #endif
-        }
+    }
+
+    private IEnumerator Delay_A(int A, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Debug.Log($"{A}번째 실행! 5초간 행동 실행!");
+    }
+
+    private IEnumerator Delay_B(int B, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Debug.Log($"{B}번째 휴식! 5초간 휴식!");
     }
 
     void OnApplicationQuit()
