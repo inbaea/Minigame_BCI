@@ -12,6 +12,7 @@ public class BlinkYesNo : MonoBehaviour
 
     private List<Transform> textSlots = new List<Transform>();
     private int currentIndex = 0;
+    private bool startWait = false;
 
     void Start()
     {
@@ -21,13 +22,19 @@ public class BlinkYesNo : MonoBehaviour
             textSlots.Add(tmp.transform);
         }
 
-        Debug.Log("Text Slot Count: " + textSlots.Count);
-
         StartCoroutine(SpawnBlinkMarkers());
     }
 
     IEnumerator SpawnBlinkMarkers()
     {
+        if (!startWait)
+        {
+            Debug.Log("10초간 뇌파를 받습니다...");
+            yield return new WaitForSeconds(10f);
+            startWait = true;
+            Debug.Log("10초가 지났습니다! 깜빡임 감지를 실행합니다!");
+        }
+
         while (currentIndex < textSlots.Count)
         {
             GameObject prefabToSpawn = blink ? yesPrefab : noPrefab;
