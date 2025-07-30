@@ -1938,7 +1938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0abbcaf89262fa441b5e507f33f65fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileName: Yawn
+  fileName: "\uC5B4\uAE68 \uB3CC\uB9AC\uAE30"
 --- !u!4 &494357345
 Transform:
   m_ObjectHideFlags: 0
